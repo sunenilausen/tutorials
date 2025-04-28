@@ -4,7 +4,7 @@ Open your browser and press ctrl+shift+i, or right click and inspect. It depends
 
 Then in the console window type
 
-```
+```javascript
 name = "Sune"
 age = 34
 ```

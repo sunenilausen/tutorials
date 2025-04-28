@@ -22,7 +22,7 @@ First try writing `hello()` in the console. It is not defined!
 
 Lets make this function
 
-```
+```javascript
 function hello(name, age) {
     return "Hello " + name + ". You are " + age + " years old."
 }
@@ -31,7 +31,7 @@ function hello(name, age) {
 Try writing `hello("Sune", 34)` now!
 
 Lets write another function
-```
+```javascript
 function whoAreYou() {
     name = window.prompt("What is your name?")
     age = window.prompt("What is your age?")

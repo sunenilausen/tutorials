@@ -12,7 +12,7 @@ Try it out
 
 Now the `sune` object can also contain functions. So lets redefine sune
 
-```
+```javascript
 sune = {
     name: "Sune",
     age: 34,
