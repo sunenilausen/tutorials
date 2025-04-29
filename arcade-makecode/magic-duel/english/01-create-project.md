@@ -27,6 +27,11 @@ Notice the `on start` block already there?
 Our game needs two players, so we need special blocks.
 
 1.  Look at the bottom of the toolbox and click "**Extensions**".
+
+![Extensions](../images/extensions.png)
+
 2.  Find and click the "**Multiplayer**" extension. Poof! New teal blocks appear in your toolbox.
+
+![Multiplayer](../images/multiplayer.png)
 * **Coding Concept: Libraries/Extensions.** Think of extensions like adding extra tools to your toolkit. They give you new blocks (new commands or instructions) that let your program do specific things, like handling two players at once.
 
