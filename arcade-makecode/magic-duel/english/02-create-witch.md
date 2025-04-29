@@ -1,44 +1,43 @@
-Vi skal fortælle computeren, at den skal skabe vores heks.
+We need to tell the computer to create our witch.
 
-1.  **Deklarér en Variabel:** Før vi skaber *spriten*, har vi brug for et sted at gemme den. Skriv dette tæt på toppen af din *code* fil:
+1.  **Declare a Variable:** Before we create the sprite, we need a place to store it. Type this near the top of your code file:
 
     ```typescript
     let playerRed: Sprite = null;
     ```
 
-    * **Kodekoncept: Variabler (`let`)**: `let` er et nøgleord, der betyder "Jeg opretter en ny variabel". `playerRed` er det navn, vi har valgt til vores variabel (ligesom en mærket kasse). `: Sprite` fortæller computeren, at denne kasse er beregnet til at indeholde et `Sprite` objekt. `= null` betyder, at kassen er tom lige nu. Semikolonnet `;` markerer slutningen af denne instruktion.
+    * **Coding Concept: Variables (`let`)**: `let` is a keyword that says "I'm creating a new variable". `playerRed` is the name we chose for our variable (like a labeled box). `: Sprite` tells the computer that this box is meant to hold a `Sprite` object. `= null` means the box is empty for now. The semicolon `;` marks the end of this instruction.
 
-2.  **Skab Spriten:** Nu, inde i `on start` *block'et* (hvis du ser et) eller bare på en ny linje, hvis din *editor* er tom, skriv:
+2.  **Create the Sprite:** Now, inside the `on start` block (if you see one) or just on a new line if your editor is empty, type:
 
     ```typescript
     playerRed = sprites.create(sprites.swamp.witchBack0, SpriteKind.Player);
     ```
 
-    * **Kodekoncept: Funktioner (`sprites.create(...)`)**: `sprites.create()` er en **funktion** – en kommando, der udfører en handling. Vi fortæller `sprites`-delen af *game'et* at `create` (skabe) noget.
-    * **Kodekoncept: Parametre (`(...)`)**: Tingene inde i parenteserne `()` er **parametre** – ekstra information, som funktionen har brug for.
-        * `sprites.swamp.witchBack0` fortæller funktionen *hvilket billede* den skal bruge (MakeCode har indbyggede billeder).
-        * `SpriteKind.Player` fortæller den hvilken **Kind** (type) *spriten* er. `SpriteKind` er ligesom en kategori, og `Player` er det specifikke mærke. Dette hjælper os med at identificere *player sprites* senere.
-    * **Kodekoncept: Tildeling (`=`)**: Det enkelte lighedstegn `=` tildeler resultatet af `sprites.create()` funktionen (selve *sprite* objektet) til vores `playerRed` variabel.
+    * **Coding Concept: Functions (`sprites.create(...)`)**: `sprites.create()` is a **function** – a command that performs an action. We're telling the `sprites` part of the game to `create` something.
+    * **Coding Concept: Parameters (`(...)`)**: The things inside the parentheses `()` are **parameters** – extra information the function needs.
+        * `sprites.swamp.witchBack0` tells the function *what picture* to use (MakeCode has built-in pictures).
+        * `SpriteKind.Player` tells it what **Kind** the sprite is. `SpriteKind` is like a category, and `Player` is the specific label. This helps us identify player sprites later.
+    * **Coding Concept: Assignment (`=`)**: The single equals sign `=` assigns the result of the `sprites.create()` function (the actual sprite object) to our `playerRed` variable.
 
-3.  **Forbind til Player 1 Kontrol:** Tilføj denne linje under den forrige:
+3.  **Connect to Player 1 Controls:** Add this line below the previous one:
 
     ```typescript
     mp.setPlayerSprite(mp.playerSelector(mp.PlayerNumber.One), playerRed);
     ```
 
-    * Dette kalder en anden funktion fra Multiplayer (`mp`) værktøjerne.
-    * `mp.setPlayerSprite` forbinder et *player number* til en *sprite* variabel.
-    * `mp.playerSelector(mp.PlayerNumber.One)` vælger *Player* 1.
-    * `playerRed` er den *sprite*, vi ønsker, at *Player* 1 skal kontrollere.
+    * This calls another function from the Multiplayer (`mp`) tools.
+    * `mp.setPlayerSprite` links a player number to a sprite variable.
+    * `mp.playerSelector(mp.PlayerNumber.One)` selects Player 1.
+    * `playerRed` is the sprite we want Player 1 to control.
+4. **Making Player 1 Move:**
 
-4.  **Få Player 1 til at Bevæge Sig:**
-
-    Tilføj denne linje for at få heksen til at reagere på knaptryk:
+    Add this line to make the witch respond to button presses:
 
     ```typescript
     mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.One), 100, 100);
     ```
 
-    * **Kodekoncept: Flere Parametre**: `mp.moveWithButtons` funktionen tager *playeren* (`mp.playerSelector(...)`) og valgfrit hastigheder for venstre/højre (`vx` - det første `100`) og op/ned (`vy` - det andet `100`).
+    * **Coding Concept: More Parameters**: The `mp.moveWithButtons` function takes the player (`mp.playerSelector(...)`), and optionally, speeds for left/right (`vx` - the first `100`) and up/down (`vy` - the second `100`).
 
-    *Prøv Det\!* Klik på "Download" eller "Run" knappen øverst for at se dit *game* i *simulatoren*. Din heks burde dukke op og bevæge sig med *Player* 1's kontrol\!
+    *Try It!* At the top, click the "Download" or "Run" button to see your game in the simulator. Your witch should appear and move with Player 1's controls!
