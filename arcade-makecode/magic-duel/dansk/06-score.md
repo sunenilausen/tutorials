@@ -9,7 +9,7 @@ Vi skal fortælle spillet, hvad der skal ske, når en ildkugle rammer feen, og n
     sprites.onOverlap(p1BallId,
         p2SpriteId,
         function (sprite, otherSprite) {
-            mp.changePlayerStateBy(playerOne, MultiplayerState.score, 1);
+            mp.changePlayerStateBy(p1, MultiplayerState.score, 1);
             sprites.destroy(sprite, effects.fire, 100);
         }
     );
@@ -19,7 +19,7 @@ Vi skal fortælle spillet, hvad der skal ske, når en ildkugle rammer feen, og n
     * `p1BallId` er ID'et for heksens ildkugler.
     * `p2SpriteId` er ID'et for feens iskugler. Så denne kode kører, når en ildkugle (`sprite`) rammer en iskugle (`otherSprite`).
     * `function (sprite, otherSprite) { ... }` er "opskriften" på, hvad der skal ske, når de rammer hinanden.
-        * `mp.changePlayerStateBy(playerOne, MultiplayerState.score, 1);` betyder, at spiller nummer et (`playerOne`) får 1 point til deres score (`MultiplayerState.score`).
+        * `mp.changePlayerStateBy(p1, MultiplayerState.score, 1);` betyder, at spiller nummer et (`p1`) får 1 point til deres score (`MultiplayerState.score`).
         * `sprites.destroy(sprite, effects.fire, 100);` betyder, at den ildkugle, der ramte (`sprite`), forsvinder med en lille brandeffekt, der varer 100 millisekunder.
 
 2.  **Hvad sker der, når en iskugle rammer heksen?**
@@ -29,7 +29,7 @@ Vi skal fortælle spillet, hvad der skal ske, når en ildkugle rammer feen, og n
     sprites.onOverlap(p2BallId,
         p1SpriteId,
         function (sprite, otherSprite) {
-            mp.changePlayerStateBy(playerTwo, MultiplayerState.score, 1);
+            mp.changePlayerStateBy(p2, MultiplayerState.score, 1);
             sprites.destroy(sprite, effects.fountain, 100);
         }
     );
@@ -38,7 +38,7 @@ Vi skal fortælle spillet, hvad der skal ske, når en ildkugle rammer feen, og n
     * Igen bruger vi `sprites.onOverlap(...)`.
     * Nu lytter vi efter, om en iskugle (`p2BallId`) rammer heksen (`p1SpriteId`).
     * Inde i "opskriften":
-        * `mp.changePlayerStateBy(playerTwo, MultiplayerState.score, 1);` giver spiller nummer to (`playerTwo`) 1 point.
+        * `mp.changePlayerStateBy(p2, MultiplayerState.score, 1);` giver spiller nummer to (`p2`) 1 point.
         * `sprites.destroy(sprite, effects.fountain, 100);` får iskuglen til at forsvinde med en lille fontæneeffekt.
 
 **Hvad har vi gjort?**

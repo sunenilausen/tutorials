@@ -29,10 +29,10 @@ Ligesom med heksen, skal vi lave en "huske-seddel" og tegne feen for spiller 2.
     Vi fortæller spillet, at det er spiller nummer 2:
 
     ```javascript
-    let playerTwo = mp.playerSelector(2)
+    let p2 = mp.playerSelector(2)
     ```
 
-    * `let playerTwo` laver en kasse til spiller 2.
+    * `let p2` laver en kasse til spiller 2.
     * `mp.playerSelector(2)` finder spiller nummer 2.
 
 4.  **Sæt feen på plads:**
@@ -49,19 +49,19 @@ Ligesom med heksen, skal vi lave en "huske-seddel" og tegne feen for spiller 2.
     Vi sørger for, at spiller 2 styrer feen:
 
     ```javascript
-    mp.setPlayerSprite(playerTwo, fe)
+    mp.setPlayerSprite(p2, fe)
     ```
 
-    * `mp.setPlayerSprite(...)` forbinder spiller 2 (`playerTwo`) med feen (`fe`).
+    * `mp.setPlayerSprite(...)` forbinder spiller 2 (`p2`) med feen (`fe`).
 
 6.  **Giv spiller 2 mulighed for at bevæge feen:**
     Nu kan spiller 2 også flytte sin figur:
 
     ```javascript
-    mp.moveWithButtons(playerTwo, 50, 50)
+    mp.moveWithButtons(p2, 50, 50)
     ```
 
-    * `mp.moveWithButtons(...)` giver spiller 2 (`playerTwo`) mulighed for at bevæge feen med knapperne, med samme hastighed som heksen.
+    * `mp.moveWithButtons(...)` giver spiller 2 (`p2`) mulighed for at bevæge feen med knapperne, med samme hastighed som heksen.
 
 **Hvad har vi gjort?**
 

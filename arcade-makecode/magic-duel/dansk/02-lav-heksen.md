@@ -31,20 +31,20 @@ For at få heksen ind i spillet, skal vi fortælle computeren det med kode.
     Til sidst fortæller vi spillet, at det er spiller nummer 1, der skal styre `heks`:
 
     ```javascript
-    let playerOne = mp.playerSelector(1)
+    let p1 = mp.playerSelector(1)
     ```
 
-    * Vi laver en kasse, der hedder `playerOne`.
-    * `mp.playerSelector(1)` er en kommando, der finder spiller nummer 1 i spillet. Nu ved `playerOne`, hvem det er.
+    * Vi laver en kasse, der hedder `p1`.
+    * `mp.playerSelector(1)` er en kommando, der finder spiller nummer 1 i spillet. Nu ved `p1`, hvem det er.
 
 **Hvad har vi gjort?**
 
-Vi har givet vores spiller 1 heks et hemmeligt nummer, tegnet billedet af heksen på skærmen og fortalt spillet, at `playerOne` (den første spiller) skal være forbundet med den heks, vi lige har tegnet. Nu kan spillet vide, hvem der spiller som heksen!
+Vi har givet vores spiller 1 heks et hemmeligt nummer, tegnet billedet af heksen på skærmen og fortalt spillet, at `p1` (den første spiller) skal være forbundet med den heks, vi lige har tegnet. Nu kan spillet vide, hvem der spiller som heksen!
 
 ```typscript
 let p1SpriteId = 1000
 
 let heks = sprites.create(sprites.swamp.witchForward0, p1SpriteId)
 
-let playerOne = mp.playerSelector(1)
+let p1 = mp.playerSelector(1)
 ```

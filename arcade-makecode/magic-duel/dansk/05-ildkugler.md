@@ -65,7 +65,7 @@ Først laver vi "huske-sedler" til ID'er for projektilerne, og billederne af dem
     ```javascript
     mp.onButtonEvent(mp.MultiplayerButton.A,
         ControllerButtonEvent.Pressed,
-        (player) => player == playerOne ? shoot(heks, fireball, p1BallId) : shoot(fe, iceball, p2BallId)
+        (player) => player == p1 ? shoot(heks, fireball, p1BallId) : shoot(fe, iceball, p2BallId)
     )
     ```
 
@@ -73,7 +73,7 @@ Først laver vi "huske-sedler" til ID'er for projektilerne, og billederne af dem
     * `mp.MultiplayerButton.A` fortæller den, at det er 'A'-knappen, vi er interesserede i.
     * `ControllerButtonEvent.Pressed` betyder, at det skal ske, lige når knappen bliver trykket ned.
     * `(player) => ...` er en måde at sige "for hver spiller der trykker på knappen, gør det her...". `player` er en "huske-seddel" for den spiller, der trykkede.
-    * `player == playerOne ? ... : ...` er en smart måde at sige "hvis det er spiller nummer et (`playerOne`), så gør det her (`shoot` med heksen og ildkuglen), ellers (`:`) gør det her (`shoot` med feen og iskuglen)".
+    * `player == p1 ? ... : ...` er en smart måde at sige "hvis det er spiller nummer et (`p1`), så gør det her (`shoot` med heksen og ildkuglen), ellers (`:`) gør det her (`shoot` med feen og iskuglen)".
 
 **Hvad har vi gjort?**
 
