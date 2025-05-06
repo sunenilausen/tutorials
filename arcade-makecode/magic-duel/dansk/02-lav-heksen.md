@@ -1,44 +1,50 @@
-Vi skal fortælle computeren, at den skal skabe vores heks.
+**Nu skal vi lave vores Heks!**
 
-1.  **Deklarér en Variabel:** Før vi skaber *spriten*, har vi brug for et sted at gemme den. Skriv dette tæt på toppen af din *code* fil:
+For at få heksen ind i spillet, skal vi fortælle computeren det med kode.
 
-    ```typescript
-    let playerRed: Sprite = null;
+1.  **Lav en "huske-seddel" til heksen:**
+    Vi laver en *variabel* (en slags mærket kasse til at huske ting). Vi kalder kassen `p1SpriteId` og skriver:
+
+    ```javascript
+    let p1SpriteId = 1000
     ```
 
-    * **Kodekoncept: Variabler (`let`)**: `let` er et nøgleord, der betyder "Jeg opretter en ny variabel". `playerRed` er det navn, vi har valgt til vores variabel (ligesom en mærket kasse). `: Sprite` fortæller computeren, at denne kasse er beregnet til at indeholde et `Sprite` objekt. `= null` betyder, at kassen er tom lige nu. Semikolonnet `;` markerer slutningen af denne instruktion.
+    * `let` betyder, at vi laver en ny kasse.
+    * `p1SpriteId` er navnet på kassen (p1 står for spiller 1).
+    * `=` betyder "put det her i kassen".
+    * `1000` er et nummer, vi putter i kassen. Det er lidt ligesom et hemmeligt ID for vores heks.
 
-2.  **Skab Spriten:** Nu, inde i `on start` *block'et* (hvis du ser et) eller bare på en ny linje, hvis din *editor* er tom, skriv:
+2.  **Tegn heksen på skærmen:**
+    Nu bruger vi koden til at *skabe* selve billedet af heksen (en *sprite*) og huske den i en ny kasse, vi kalder `heks`:
 
-    ```typescript
-    playerRed = sprites.create(sprites.swamp.witchBack0, SpriteKind.Player);
+    ```javascript
+    let heks = sprites.create(sprites.swamp.witchForward0, p1SpriteId)
     ```
 
-    * **Kodekoncept: Funktioner (`sprites.create(...)`)**: `sprites.create()` er en **funktion** – en kommando, der udfører en handling. Vi fortæller `sprites`-delen af *game'et* at `create` (skabe) noget.
-    * **Kodekoncept: Parametre (`(...)`)**: Tingene inde i parenteserne `()` er **parametre** – ekstra information, som funktionen har brug for.
-        * `sprites.swamp.witchBack0` fortæller funktionen *hvilket billede* den skal bruge (MakeCode har indbyggede billeder).
-        * `SpriteKind.Player` fortæller den hvilken **Kind** (type) *spriten* er. `SpriteKind` er ligesom en kategori, og `Player` er det specifikke mærke. Dette hjælper os med at identificere *player sprites* senere.
-    * **Kodekoncept: Tildeling (`=`)**: Det enkelte lighedstegn `=` tildeler resultatet af `sprites.create()` funktionen (selve *sprite* objektet) til vores `playerRed` variabel.
+    * Igen bruger vi `let` til at lave en ny kasse.
+    * `heks` er navnet på kassen, hvor vi gemmer heksen.
+    * `sprites.create(...)` er en kommando til at lave et billede på skærmen.
+    * `sprites.swamp.witchForward0` fortæller computeren, *hvilket* billede den skal bruge (en heks fra sumpen, der kigger fremad).
+    * `, p1SpriteId` fortæller computeren det hemmelige ID fra før, så den ved, at det er vores spiller 1 heks.
 
-3.  **Forbind til Player 1 Kontrol:** Tilføj denne linje under den forrige:
+3.  **Fortæl spillet, hvem der styrer heksen:**
+    Til sidst fortæller vi spillet, at det er spiller nummer 1, der skal styre `heks`:
 
-    ```typescript
-    mp.setPlayerSprite(mp.playerSelector(mp.PlayerNumber.One), playerRed);
+    ```javascript
+    let playerOne = mp.playerSelector(1)
     ```
 
-    * Dette kalder en anden funktion fra Multiplayer (`mp`) værktøjerne.
-    * `mp.setPlayerSprite` forbinder et *player number* til en *sprite* variabel.
-    * `mp.playerSelector(mp.PlayerNumber.One)` vælger *Player* 1.
-    * `playerRed` er den *sprite*, vi ønsker, at *Player* 1 skal kontrollere.
+    * Vi laver en kasse, der hedder `playerOne`.
+    * `mp.playerSelector(1)` er en kommando, der finder spiller nummer 1 i spillet. Nu ved `playerOne`, hvem det er.
 
-4.  **Få Player 1 til at Bevæge Sig:**
+**Hvad har vi gjort?**
 
-    Tilføj denne linje for at få heksen til at reagere på knaptryk:
+Vi har givet vores spiller 1 heks et hemmeligt nummer, tegnet billedet af heksen på skærmen og fortalt spillet, at `playerOne` (den første spiller) skal være forbundet med den heks, vi lige har tegnet. Nu kan spillet vide, hvem der spiller som heksen!
 
-    ```typescript
-    mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.One), 100, 100);
-    ```
+```typscript
+let p1SpriteId = 1000
 
-    * **Kodekoncept: Flere Parametre**: `mp.moveWithButtons` funktionen tager *playeren* (`mp.playerSelector(...)`) og valgfrit hastigheder for venstre/højre (`vx` - det første `100`) og op/ned (`vy` - det andet `100`).
+let heks = sprites.create(sprites.swamp.witchForward0, p1SpriteId)
 
-    *Prøv Det\!* Klik på "Download" eller "Run" knappen øverst for at se dit *game* i *simulatoren*. Din heks burde dukke op og bevæge sig med *Player* 1's kontrol\!
+let playerOne = mp.playerSelector(1)
+```
