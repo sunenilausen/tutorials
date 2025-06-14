@@ -1289,21 +1289,20 @@ parameter.
 9.  Tilføj følgende linjer til *PlayerController* scriptet (de rigtige
     steder).
 
+```csharp
 Animator animator;
 
 ...
 
-animator = GetComponent\<Animator\>();
+animator = GetComponent<Animator>();
 
 ...
 
 if (dir == 0)
-
-animator.SetBool("Run", false);
-
+    animator.SetBool("Run", false);
 else
-
-animator.SetBool("Run", true);
+    animator.SetBool("Run", true);
+```
 
 Hvis *dir* (vores bevægelse) er 0 (vi står stille), så sætter vi *Run*
 til **false** (dvs. løb ikke), ellers sæt *Run* til **true** (løb).
@@ -1361,11 +1360,11 @@ style="width:6.77222in;height:1.39653in" />
 12. I *PlayerController* scriptet ændrer nu i OnTriggerEnter2D til
     følgende:
 
-Animator animC = collision.gameObject.GetComponent\<Animator\>();
-
+```csharp
+Animator animC = collision.gameObject.GetComponent<Animator>();
 animC.SetTrigger("Taken");
-
 //Destroy(collision.gameObject);
+```
 
 Nu skulle det gerne virke.
 
@@ -1430,31 +1429,23 @@ style="width:4.89583in;height:0.54306in" />
 11. Tilføj følgende linjer til *PlayerController* scriptet (i bunden af
     OnTriggerEnter2D(Collider2D collision))
 
+```csharp
 if (collision.gameObject.CompareTag("Trampoline"))
-
 {
+    Animator animC = collision.gameObject.GetComponent<Animator>();
+    float forceY = Mathf.Abs(rb.velocity.y * jumpPower / 8);
 
-Animator animC = collision.gameObject.GetComponent\<Animator\>();
+    if (forceY > 100)
+    {
+        if (forceY > 800)
+            forceY = 800;
 
-float forceY = Mathf.Abs(rb.velocity.y\*jumpPower/8);
-
-if (forceY \> 100)
-
-{
-
-if (forceY \> 800)
-
-forceY = 800;
-
-animC.SetTrigger("Jump");
-
-rb.velocity = new Vector2(rb.velocity.x, 0);
-
-rb.AddForce(new Vector2(0, forceY));
-
+        animC.SetTrigger("Jump");
+        rb.velocity = new Vector2(rb.velocity.x, 0);
+        rb.AddForce(new Vector2(0, forceY));
+    }
 }
-
-}
+```
 
 12. Husk at lave en PreFab når det virker.
 
@@ -1500,13 +1491,12 @@ style="width:4.93403in;height:1.44583in" />
 
 13. Åben *LevelEnd* scriptet og tilføj følgende linjer.
 
+```csharp
 private void OnTriggerEnter2D(Collider2D collision)
-
 {
-
-SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 }
+```
 
 14. Banerne er nu ens, men det fikset let ved at man sletter alt det man
     ikke skal bruge fra *Level2* og så tegne noget nyt (Husk at vælge
@@ -1516,29 +1506,21 @@ SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     Der er dog det problem at man ikke når at høre lyden inden det nye
     level bliver loadet. Det løses ved at ændre koden til:
 
+```csharp
 private void OnTriggerEnter2D(Collider2D collision)
-
 {
-
-if (collision.gameObject.name == "Player")
-
-{
-
-audioPlayer.PlayOneShot(finishSound, 1);
-
-Invoke("CompleteLevel", 2f);
-
-}
-
+    if (collision.gameObject.name == "Player")
+    {
+        audioPlayer.PlayOneShot(finishSound, 1);
+        Invoke("CompleteLevel", 2f);
+    }
 }
 
 private void CompleteLevel()
-
 {
-
-SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 }
+```
 
 ### Overfør point
 
@@ -1553,23 +1535,22 @@ point. Det skyldes at alt bliver nulstillet. Det løses på følgende måde.
 3.  I *Init* scriptet skriver man følgende (det sletter ’alt’ første
     gang):
 
+```csharp
 private void Awake()
-
 {
-
-PlayerPrefs.DeleteAll();
-
+    PlayerPrefs.DeleteAll();
 }
+```
 
 4.  I *PlayerController* scriptet skriver man følgende:
 
+```csharp
 // i Start()
-
 point = PlayerPrefs.GetInt("Score");
 
 // Hver gang man opdaterer point
-
 PlayerPrefs.SetInt("Score", point);
+```
 
 Den sidste linje <u>gemmer</u> *Score* og den første linje <u>henter</u>
 *Score*.
@@ -1651,7 +1632,9 @@ objekt, som *Sprite Render*, *Colliders*, etc.
 Man har tit brug for at kunne tilgå disse komponenter og de kan ’hentes’
 på følgende måde:
 
-xxComp = GetComponent\<Rigidbody2D\>();
+```csharp
+xxComp = GetComponent<Rigidbody2D>();
+```
 
 <img src="./media/media/image53.png"
 style="width:1.67708in;height:0.33333in" />De enkelte komponentnavne kan
@@ -1662,7 +1645,9 @@ Komponenten **Transform** er der altid og tilgåes direkte med transform.
 
 Hvis man her flere af den samme komponent, så skal man bruge:
 
-xxCompList = GetComponents\<CapsuleCollider2D\>();
+```csharp
+xxCompList = GetComponents<CapsuleCollider2D>();
+```
 
 Funktionen har fået et ’s’ på og xxCompList er en liste af komponenter.
 
@@ -1676,23 +1661,27 @@ eventuelt joystick (Horizontal).
 
 De enkelte kombinationer kan findes i **Edit-\>Projekt setting-\>Input
 manager**.
-
+```csharp
 float dir;
 
-dir = Input.GetAxisRaw("Horizontal"); \[-1, 0, 1\]
+dir = Input.GetAxisRaw("Horizontal"); // [-1, 0, 1]
+```
 
 For hop skal man bruge denne funktion, da den kræver at man slipper
 tasten før man kan hoppe igen.
 
+```csharp
 float jumpKey;
 
 jumpKey = Input.GetButtonDown("Jump");
+```
 
 ## Bevægelse
 
 Når man har fundet ud af hvilken flytning af figuren man har brug for,
 så laves selve flytningen på følgende måde:
 
+```csharp
 transform.Translate(xSpeed, ySpeed, 0); // Move
 
 rb = GetComponent\<Rigidbody2D\>();
@@ -1705,40 +1694,37 @@ rigtige retning, kan det gøres sådan:
 sprite = GetComponent\<SpriteRenderer\>();
 
 sprite.flipX = true; // Flip image
+```
 
 Et fuldt eksempel kunne se sådan ud:
+```csharp
+[SerializeField] float speed;
 
-\[SerializeField\] float speed;
+Rigidbody2D rb;
+SpriteRenderer sprite;
 
 void Start()
-
 {
-
-rb = GetComponent\<Rigidbody2D\>();
-
-sprite = GetComponent\<SpriteRenderer\>();
-
+    rb = GetComponent<Rigidbody2D>();
+    sprite = GetComponent<SpriteRenderer>();
 }
 
 void Move(float dir)
-
 {
+    transform.Translate(dir * speed * Time.deltaTime, 0, 0);
 
-transform.Translate(dir \* speed \* Time.deltaTime, 0, 0);
-
-if (dir \> 0)
-
-sprite.flipX = false;
-
-else if (dir \< 0)
-
-sprite.flipX = true;
-
+    if (dir > 0)
+        sprite.flipX = false;
+    else if (dir < 0)
+        sprite.flipX = true;
 }
+```
 
 I stedet for at bruge transform.Tranlate(...), kan man også skrive.
 
+```csharp
 rb.velocity = new Vector2(dir \* speed, rb.velocity.y);
+```
 
 Det kan dog give lidt problemer med at flytte *Player* en gang i mellem
 (den ’sidder’ fast i grunden). Det løses ved at ændre **Box Collider
@@ -1751,29 +1737,22 @@ da man ellers kan hoppe i luften! Her er vist en af de måder det kan
 løses på. Man flytter sin ’kollisions kasse’ lidt ned og ser om den
 overlapper med jorden.
 
-\[SerializeField\] LayerMask groundLayer;
+```csharp
+[SerializeField] LayerMask groundLayer;
 
 void Update()
-
 {
-
-if (jumpKey && GroundCheck())
-
-Jump();
-
+    if (jumpKey && GroundCheck())
+        Jump();
 }
 
 bool GroundCheck()
-
 {
-
-coll = GetComponent\<CapsuleCollider2D\>();
-
-return Physics2D.CapsuleCast(coll.bounds.center,
-
-coll.bounds.size, 0f, 0f, Vector2.down, 0.1f, groundLayer);
-
+    var coll = GetComponent<CapsuleCollider2D>();
+    return Physics2D.CapsuleCast(coll.bounds.center, coll.bounds.size, CapsuleDirection2D.Vertical, 0f, Vector2.down, 0.1f, groundLayer
+    );
 }
+```
 
 *Ground Layer* skal sættes i **Inspector**’en, til det lag som er
 *Ground*.
@@ -1802,35 +1781,25 @@ I scriptet kan man så lave en aktion på kollisionen, på følgende måde:
 
 Normal kollision:
 
-private void OnCollisionEnter2D (Collision2D collision)
-
+```csharp
+// Normal kollision:
+private void OnCollisionEnter2D(Collision2D collision)
 {
-
-if (collision.gameObject.name == "Player")
-
-{
-
-...
-
+    if (collision.gameObject.name == "Player")
+    {
+        // ...
+    }
 }
 
-}
-
-Trigger kollision:
-
+// Trigger kollision:
 private void OnTriggerEnter2D(Collider2D collision)
-
 {
-
-if (collision.gameObject.CompareTag("Cherry"))
-
-{
-
-...
-
+    if (collision.gameObject.CompareTag("Cherry"))
+    {
+        // ...
+    }
 }
-
-}
+```
 
 For at det virker skal mindst det ene objekt også have en *Rigidbody*
 komponent. Læg mærke til at der er vist to forskellige måde at ’se’
@@ -1884,11 +1853,13 @@ som stå og løbe, så gentager man skridtene oven for hver animation.
 Nu skal man tilføje nogle transitioner og parametre til at styre det med
 (se video). Disse parametre kan så tilgås fra scriptet på følgende måde:
 
+```csharp
 animator = GetComponent\<Animator\>();
 
 animator.SetTrigger("Die");
 
 animator.SetFloat("Velocity", speed);
+```
 
 Husk, at parametrene skal staves på helt samme måde som i
 **Animator**’en (Die/Velocity)!
@@ -1900,27 +1871,22 @@ dem i **Assets/Sounds/**. For det *objekt* som man ønsker lydsupport
 for, skal man først tilføje en **AudioSource** komponent. I scriptet for
 det *objekt* gør man følgende:
 
-\[SerializeField\] AudioClip jumpSound;
+```csharp
+[SerializeField] AudioClip jumpSound;
 
 AudioSource audioPlayer;
 
 void Start()
-
 {
-
-audioPlayer = GetComponent\<AudioSource\>();
-
+    audioPlayer = GetComponent<AudioSource>();
 }
 
 void Update()
-
 {
-
-if (jump)
-
-audioPlayer.PlayOneShot(jumpSound, 1.0f);
-
+    if (jump)
+        audioPlayer.PlayOneShot(jumpSound, 1.0f);
 }
+```
 
 Man skal så trække den lydfil over i **Jump Sound** feltet i
 **Inspector**’en, som man ønsker at bruge.
@@ -1948,11 +1914,13 @@ pludselig ”forsvinde”. Det skyldes at den boks som teksten står i er for
 lille. Det rettes ved at vælge teksten og så rettet boksen størrelse i
 **Scene**’en.
 
+```csharp
 using UnityEngine.UI;
 
-\[SerializeField\] Text score;
+[SerializeField] Text score;
 
 score.text = "Score: " + point;
+```
 
 Link:
 <https://youtu.be/pXn9icmreXE?list=PLrnPJCHvNZuCVTz6lvhR81nnaf1a-b67U&t=966>
@@ -2031,11 +1999,13 @@ trække dem fra **PreFabs** folderen ind i spillet (**Scene**).
 Partikler sættes op i GUI’en og kan så styres fra et script på følgende
 måde.
 
-\[SerializeField\] ParticleSystem explosionParticle;
+```csharp
+[SerializeField] ParticleSystem explosionParticle;
 
 explosionParticle.Play();
 
 explosionParticle.Stop();
+```
 
 ## Dynamisk opret og slet et objekt
 
@@ -2044,7 +2014,9 @@ gøre følgende. Lav en PreFab af objektet i GUI’en.
 
 I scriptet laves en variabel til at holde den PreFab som man vil kreere.
 
-\[SerializeField\] GameObject objPreFab;
+```csharp
+[SerializeField] GameObject objPreFab;
+```
 
 Man skal så bagefter ind i GUI’en og ’trække’ den PreFab man vil bruge
 ind i det flet som er kommet i scriptet (**objPreFab**).
@@ -2062,21 +2034,16 @@ som skal sidde fast på det objekt som skal uddø. Scriptet kan se således
 ud – her undersøger man om objektet er uden for området, og i givet fald
 så slettes det.
 
+```csharp
 void Update()
-
 {
-
-// Destroy ojekt if x position less than left limit
-
-if (transform.position.x \< leftLimit)
-
-{
-
-Destroy(gameObject);
-
+    // Destroy object if x position is less than leftLimit
+    if (transform.position.x < leftLimit)
+    {
+        Destroy(gameObject);
+    }
 }
-
-}
+```
 
 ## Script kommunikation
 
@@ -2090,27 +2057,22 @@ har et script som hedder **PlayerController** og dette script har en
 Hvis man vil tilgå denne gameOver variabel fra et andet script, skal man
 gøre følgende:
 
+```csharp
 PlayerController playerControllerScript;
 
 void Start()
-
 {
-
-playerControllerScript =
-
-GameObject.Find("Player").GetComponent\<PlayerController\>();
-
+    playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
 }
 
 void Update()
-
 {
-
-if (playerControllerScript.gameOver == false)
-
-\<gør noget\>
-
+    if (playerControllerScript.gameOver == false)
+    {
+        // gør noget
+    }
 }
+```
 
 # Utility
 
@@ -2125,21 +2087,22 @@ Time.deltaTime;
 Så hvis man skal lave en hastighed, som er uafhængig af frameraten, så
 kan det gøres på følgende måde:
 
-move = speed \* Time.deltaTime;
+```csharp
+move = speed * Time.deltaTime;
+```
 
 hvor speed angiver en faktor for hvor hurtigt noget skal flytte sig.
 
 Hvad man skal lave et delay mellem fx to skud, kan man gøre følgende:
 
-tidVent += Time.delatTime;
+```csharp
+tidVent += Time.deltaTime;
 
-if (tidVent \> 2) { // 2 sekunder
-
-\<skud\>
-
-tidVent = 0;
-
+if (tidVent > 2) { // 2 sekunder
+    // <skud>
+    tidVent = 0;
 }
+```
 
 ## Fejlsøgning
 
@@ -2178,38 +2141,34 @@ operationer. Det kan gøres på flere forskellige måder.
 Invoke tager to parametre: Et navn på en funktion og et tal som angiver
 hvor længe den venter inden den kalder funktionen.
 
+```csharp
 Invoke("RestartLevel", 2);
 
 ...
 
 private void RestartLevel()
-
 {
-
-SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 }
+```
 
 ### Coroutine
 
 Dette kræver at man laver en ny funktion til dette og at den kaldes på
 en ’speciel’ måde.
 
+```csharp
 StartCoroutine(xxDelay());
 
 ...
 
 IEnumerator xxDelay()
-
 {
-
-\<lav noget\>
-
-yield return new WaitForSeconds(2); // Vent 2 sekunder
-
-\<lav noget\>
-
+    // <lav noget>
+    yield return new WaitForSeconds(2); // Vent 2 sekunder
+    // <lav noget>
 }
+```
 
 Hvor xxDelay er navnet på den nye funktion.
 
@@ -2237,67 +2196,48 @@ Scriptet oprettes i **Assets/Scripts/** og følgende indhold tilføjes:
 (Scriptet er en del af *2dplatform* start pakke)
 
 *WaypointFollower.cs*
-
-\[SerializeField\] GameObject\[\] waypoints;
+```csharp
+[SerializeField] GameObject[] waypoints;
 
 int currentWaypointIndex = 0;
 
-\[SerializeField\] float speed;
+[SerializeField] float speed;
 
 SpriteRenderer sr;
 
 private void Start()
-
 {
-
-sr = GetComponent\<SpriteRenderer\>();
-
+    sr = GetComponent<SpriteRenderer>();
 }
 
 void Update()
-
 {
+    int prevWaypointIndex;
+    if (Vector2.Distance(waypoints[currentWaypointIndex].transform.position, transform.position) < 0.1f)
+    {
+        prevWaypointIndex = currentWaypointIndex;
+        currentWaypointIndex++;
 
-int prevWaypointIndex;
+        if (currentWaypointIndex >= waypoints.Length)
+            currentWaypointIndex = 0;
 
-if
-(Vector2.Distance(waypoints\[currentWaypointIndex\].transform.position,
-transform.position) \< 0.1f)
+        // Change direction for default layer only
+        if (gameObject.layer != LayerMask.NameToLayer("Ground"))
+        {
+            if (waypoints[currentWaypointIndex].transform.position.x > waypoints[prevWaypointIndex].transform.position.x)
+                sr.flipX = true;
+            else
+                sr.flipX = false;
+        }
+    }
 
-{
-
-prevWaypointIndex = currentWaypointIndex;
-
-currentWaypointIndex++;
-
-if (currentWaypointIndex \>= waypoints.Length)
-
-currentWaypointIndex = 0;
-
-// Change direction for default layer only
-
-if (gameObject.layer != LayerMask.NameToLayer("Ground"))
-
-{
-
-if (waypoints\[currentWaypointIndex\].transform.position.x \>
-waypoints\[prevWaypointIndex\].transform.position.x)
-
-sr.flipX = true;
-
-else
-
-sr.flipX = false;
-
+    transform.position = Vector2.MoveTowards(
+        transform.position,
+        waypoints[currentWaypointIndex].transform.position,
+        Time.deltaTime * speed
+    );
 }
-
-}
-
-transform.position = Vector2.MoveTowards(transform.position,
-waypoints\[currentWaypointIndex\].transform.position, Time.deltaTime \*
-speed);
-
-}
+```
 
 <img src="./media/media/image64.png"
 style="width:1.33333in;height:0.86458in" />Scriptet vender automatisk
@@ -2335,34 +2275,23 @@ som skal have denne egenskab. Det er vigtigt at ens figur hedder
 (Scriptet er en del af *2dplatform* start pakken)
 
 *StickyPlatform.cs*
-
+```csharp
 private void OnCollisionEnter2D(Collision2D collision)
-
 {
-
-if (collision.gameObject.name == "Player")
-
-{
-
-collision.gameObject.transform.SetParent(transform);
-
-}
-
+    if (collision.gameObject.name == "Player")
+    {
+        collision.gameObject.transform.SetParent(transform);
+    }
 }
 
 private void OnCollisionExit2D(Collision2D collision)
-
 {
-
-if (collision.gameObject.name == "Player")
-
-{
-
-collision.gameObject.transform.SetParent(null);
-
+    if (collision.gameObject.name == "Player")
+    {
+        collision.gameObject.transform.SetParent(null);
+    }
 }
-
-}
+```
 
 # Special setup
 
@@ -2375,38 +2304,24 @@ at sætte figuren ind i **player** feltet i **Inspector**’en.)
 (Scriptet er en del af *2dplatform* start pakke)
 
 *CameraFollower.cs*
-
-\[SerializeField\] Transform player;
+```csharp
+[SerializeField] Transform player;
 
 void Update()
-
 {
+    transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
 
-transform.position = new Vector3(player.position.x,
+    if (player.position.y > 5)
+    {
+        transform.position = new Vector3(transform.position.x, player.position.y - 5, transform.position.z);
+    }
 
-transform.position.y, transform.position.z);
-
-if (player.position.y \> 5)
-
-{
-
-transform.position = new Vector3(transform.position.x,
-
-player.position.y - 5, transform.position.z);
-
+    if (player.position.y < -3)
+    {
+        transform.position = new Vector3(transform.position.x, player.position.y + 3, transform.position.z);
+    }
 }
-
-if (player.position.y \< -3)
-
-{
-
-transform.position = new Vector3(transform.position.x,
-
-player.position.y + 3, transform.position.z);
-
-}
-
-}
+```
 
 ## Glat overflade
 
@@ -2538,50 +2453,58 @@ vejledningen ikke passer perfekt til din kode!
 Helt oppe i toppen af filen (linje 1) skal stå følgende (det er for at
 gøre det lettere at teste og debugge):
 
-\#if UNITY_ANDROID
+```csharp
+#if UNITY_ANDROID
 
-\#define SCREEN_BUTTONS
+#define SCREEN_BUTTONS
 
-\#endif
+#endif
+```
 
 Under ’globale’ variable skal stå:
 
-\#if SCREEN_BUTTONS
+```csharp
+#if SCREEN_BUTTONS
 
 Knapper knapperObj;
 
-\#endif
+#endif
+```
 
 I Start() skal stå (det er ikke afgørende hvor):
 
-\#if SCREEN_BUTTONS
+```csharp
+#if SCREEN_BUTTONS
 
-Debug.Log("SCEREN_BUTTONS");
+Debug.Log("SCREEN_BUTTONS");
 
-knapperObj = GameObject.Find("Knapper").GetComponent\<Knapper\>();
+knapperObj = GameObject.Find("Knapper").GetComponent<Knapper>();
 
-\#else
+#else
 
 GameObject.Find("Knapper").SetActive(false);
 
-\#endif
+#endif
+```
 
 Disse linjer skal stå i Update() umidbart efter at man har <u>læst</u>
 *dir* og *jump* med Input.GetAxisraw().
-
-\#if SCREEN_BUTTONS
+```csharp
+#if SCREEN_BUTTONS
 
 dir = knapperObj.GetDirX();
 
 jump = knapperObj.GetJump();
 
-\#endif
+#endif
+```
 
 For at teste om det virker skal man sætte følgende linje ind i linje 4
 (det tvinger koden til at aktivere knapperne selvom man ikke er i
 Android mode):
-
-\#define SCREEN_BUTTONS
+```csharp
+#define SCREEN_BUTTONS
+```
 
 Kør spillet og tryk med musen på knapperne og se at de virker (tasterne
 virker ikke i Android mode). Når det virker så slet \#define
