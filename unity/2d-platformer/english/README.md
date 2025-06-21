@@ -33,5 +33,5 @@ pandoc introduction.md \
   --to pdf \
   --output output.pdf \
   --pdf-engine=pdflatex \
-  --highlight-style=tango
-
+  --highlight-style=tango \
+  --number-sections
