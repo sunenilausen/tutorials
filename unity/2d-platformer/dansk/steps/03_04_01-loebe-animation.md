@@ -7,18 +7,18 @@ en løbe animation (run).
     oven for. Husk at man skal vælge den rigtige animation i
     **Animation** vinduet, inden man kopierer billederne over.
 
-![Alt text](media/image41.png){ width=2.75486in height=1.05833in }
+![](media/image41.png){ width=2.75486in height=1.05833in }
 
 Da man nu har flere animationer, er man nød til at fortælle Unity
 hvilken animation man skal bruge hvornår.
 
 2.  Åben Player **Animator**’en – dobbelt klip på:
 
-![Alt text](media/image42.png){ width=0.52431in height=0.70764in }
+![](media/image42.png){ width=0.52431in height=0.70764in }
 
 Der kommer et billede frem som ser lidt ud som dette:
 
-![Alt text](media/image43.png){ width=5.68889in height=2.51458in }
+![](media/image43.png){ width=5.68889in height=2.51458in }
 
 Det er et diagram, som viser de forskellige animationstilstande og
 hvordan man kan komme fra den ene til den anden.
@@ -35,7 +35,7 @@ hvordan man kan komme fra den ene til den anden.
 6.  Klik nu på den pil som går fra *Player_idle*-\>*Player_run* og se på
     **Inspector**’en ude til højre.
 
-![Alt text](media/image44.png){ width=5.61319in height=2.62708in }
+![](media/image44.png){ width=5.61319in height=2.62708in }
 
 7.  Tryk på ’+’ \[1\], hvilket automatisk laver \[2\]. Fjern markeringen
     i **Has Exit Time** \[3\].

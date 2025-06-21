@@ -9,7 +9,7 @@ overlapper, som hvis en person skal tage en ting. Hvis den ene af de to
 objekter har ’triggeren’ sat, så bliver det en ’trigger’ kollision.
 ’Triggeren’ sættes i **Inspector**’en under **Collider**’en.
 
-![Alt text](media/image54.png){ width=2.17708in height=0.26042in }
+![](media/image54.png){ width=2.17708in height=0.26042in }
 
 I scriptet kan man så lave en aktion på kollisionen, på følgende måde:
 

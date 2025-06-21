@@ -22,6 +22,6 @@ texts to make it more organized in the **Inspector**.
 
 hover the mouse over the field
 
-![Alt text](media/image52.png){ width=5.92708in height=2.61597in }
+![](media/image52.png){ width=5.92708in height=2.61597in }
 
 Here **Texts** and **Sounds** are examples of Header fields.

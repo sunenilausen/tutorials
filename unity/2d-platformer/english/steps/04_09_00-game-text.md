@@ -1,6 +1,6 @@
 ## Game Text
 
-![Alt text](media/image18.png){ width=0.9375in height=0.35417in }You insert text on
+![](media/image18.png){ width=0.9375in height=0.35417in }You insert text on
 the screen in the game by creating an object with **UI->Text**. (2021.3
 **UI->Legacy->Text**) This will automatically create two objects: **Canvas**
 and **the object**. This object must then be 'linked' to the script in the score

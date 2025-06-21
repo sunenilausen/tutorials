@@ -17,7 +17,7 @@ luften.
 
 5.  Sæt **Is Trigger**.
 
-![Alt text](media/image35.png){ width=0.85069in height=1.41667in }
+![](media/image35.png){ width=0.85069in height=1.41667in }
 
 6.  Tilføj følgende kode til *PlayerController* scriptet (nede i bunden
     af filen før den sidste ’}’).

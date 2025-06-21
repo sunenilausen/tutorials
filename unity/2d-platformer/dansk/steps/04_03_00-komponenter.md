@@ -10,7 +10,7 @@ på følgende måde:
 xxComp = GetComponent<Rigidbody2D>();
 ```
 
-![Alt text](media/image53.png){ width=1.67708in height=0.33333in }De enkelte komponentnavne kan
+![](media/image53.png){ width=1.67708in height=0.33333in }De enkelte komponentnavne kan
 findes i **Inspector**’en, hvor man bare skal fjerne eventuelle
 mellemrum fra navnet. Fx Rigidbody 2D -\> Rigidbody2D
 

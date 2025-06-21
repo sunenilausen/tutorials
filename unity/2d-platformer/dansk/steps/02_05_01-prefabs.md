@@ -1,5 +1,5 @@
 ### PreFabs
- ![Alt text](media/image15.png){ width=1.075in height=0.99514in }
+ ![](media/image15.png){ width=1.075in height=0.99514in }
 
 Når man har lavet sin frugt færdig, skal man lave en *PreFab*. En
 *PreFab* er en skabelon som man kan bruge igen og igen.
@@ -23,9 +23,9 @@ Når man får mange frugter, så bliver ens **Hierarchy** lidt rodet.
     positionen til noget andet end 0! Ret det i **Inspector**’en ved at
     sætte det til 0 – se billede.
 
-![Alt text](media/image16.png){ width=6.23611in height=0.81458in }
+![](media/image16.png){ width=6.23611in height=0.81458in }
 
 4.  Træk alle frugterne ind under dette nye objekt for at få lidt mere
     orden.
 
-![Alt text](media/image17.png){ width=1.25in height=1.28125in }
+![](media/image17.png){ width=1.25in height=1.28125in }

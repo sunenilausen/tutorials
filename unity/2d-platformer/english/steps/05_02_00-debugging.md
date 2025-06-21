@@ -7,7 +7,7 @@ You can add debug text in the following way, which can be seen in the
 
 Debug.Log("Text " + value);
 
-![Alt text](media/image63.png){ width=1.23958in height=0.97222in }
+![](media/image63.png){ width=1.23958in height=0.97222in }
 
 You can also click on the three dots in the right corner of the **Inspector** GUI
 and select Debug. This way you can see all variables in the program

@@ -30,7 +30,7 @@ under *Assets*, it should be created first.
 7.  If the animation should continue, you must remember to set *Loop Time* in
     the **Inspector**.
 
-![Alt text](media/image39.png){ width=5.88542in height=1.81319in }
+![](media/image39.png){ width=5.88542in height=1.81319in }
 
 When you are done with the animation window, you can advantageously dock it
 to one of the other windows you have, so it is easier to find next

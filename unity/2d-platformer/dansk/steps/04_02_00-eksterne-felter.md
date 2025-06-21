@@ -22,6 +22,6 @@ tekster for at gøre det mere overskueligt i **Inspector**’en.
 
 holder musen over feltet
 
-![Alt text](media/image52.png){ width=5.92708in height=2.61597in }
+![](media/image52.png){ width=5.92708in height=2.61597in }
 
 Her er **Texts** og **Sounds** eksempler på Header felter.

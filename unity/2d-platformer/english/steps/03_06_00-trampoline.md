@@ -16,17 +16,17 @@ This describes how to create a trampoline. The code is made so that for the tram
 
 7.  Create a **Make Transition** from the *Trampoline* state to itself – see blue arrow in the image below in the bottom right corner:
 
-![Alt text](media/image47.png){ width=5.77083in height=1.81528in }
+![](media/image47.png){ width=5.77083in height=1.81528in }
 
 8.  Select the new *Transition* (the arrow) and add a **Conditions** and set it to *Jump*.
 
 9.  Also remove the checkmark next to **Has Exit Time**.
 
-![Alt text](media/image48.png){ width=4.71875in height=0.53403in }
+![](media/image48.png){ width=4.71875in height=0.53403in }
 
 10. Select *Trampoline* in the *Animator* folder and remove the checkmark in **Loop Time** (**Inspector**):
 
-![Alt text](media/image49.png){ width=0.80208in height=0.90625in }![Alt text](media/image50.png){ width=4.89583in height=0.54306in }
+![](media/image49.png){ width=0.80208in height=0.90625in }![](media/image50.png){ width=4.89583in height=0.54306in }
 
 11. Add the following lines to the *PlayerController* script (at the bottom of OnTriggerEnter2D(Collider2D collision))
 

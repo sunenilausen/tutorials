@@ -3,10 +3,10 @@
 Now we need to get the game over to the Android device.
 
 1.  Open Unity HUB and install Android support
-    (Install->![Alt text](media/image77.png){ width=0.16181in height=0.15625in }->Add modules). Unity
+    (Install->![](media/image77.png){ width=0.16181in height=0.15625in }->Add modules). Unity
     GUI must be restarted afterwards for it to work.
 
-![Alt text](media/image78.png){ width=2.25in height=0.94028in }
+![](media/image78.png){ width=2.25in height=0.94028in }
 
 2.  Put the Android device in *Developer mode* (search online – it's a bit
     surprising what you have to do and can depend on the model). This
@@ -32,4 +32,4 @@ be played 'offline'. Name etc. can be set in **Player Settings** under
 If the texts (Score etc.) are not positioned correctly on the screen,
 you can fix it by using *anchors* for the individual texts.
 
-![Alt text](media/image79.png){ width=1.73958in height=1.02083in }
+![](media/image79.png){ width=1.73958in height=1.02083in }

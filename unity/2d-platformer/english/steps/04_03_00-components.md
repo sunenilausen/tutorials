@@ -10,7 +10,7 @@ in the following way:
 xxComp = GetComponent<Rigidbody2D>();
 ```
 
-![Alt text](media/image53.png){ width=1.67708in height=0.33333in }The individual component names can
+![](media/image53.png){ width=1.67708in height=0.33333in }The individual component names can
 be found in the **Inspector**, where you just need to remove any
 spaces from the name. For example, Rigidbody 2D -> Rigidbody2D
 

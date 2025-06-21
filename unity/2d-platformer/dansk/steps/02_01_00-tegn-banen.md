@@ -10,7 +10,7 @@ Ved at vælge billederne i **Tile Palette** vinduet kan man tegne sin
 bane i **Scene** vinduet. Man kan også slette, kopier mv. ved at vælge i
 denne menu (øverst i **Tile Palette** vinduet).
 
-![Alt text](media/image2.png){ width=2.48958in height=0.34375in }
+![](media/image2.png){ width=2.48958in height=0.34375in }
 
 2.  Tegn lidt på banen. Ikke for meget på nuværende tidspunkt, da man
     har brug for en Player for a kunne finde de rette dimensioner for
@@ -26,4 +26,4 @@ sætte **Layer** tll *Ground*.
 4.  Tryk på *Terrain* i **Hierarchy**’et igen og vælg nu *Ground* i
     **Inspector**’en.
 
-![Alt text](media/image3.png){ width=1.9375in height=0.58333in }
+![](media/image3.png){ width=1.9375in height=0.58333in }

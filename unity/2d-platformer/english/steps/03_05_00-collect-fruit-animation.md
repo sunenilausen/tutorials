@@ -14,7 +14,7 @@ Down in the **Assets** folder under **Fruits** there's an animation called *Coll
 
 5.  Create a **Parameter (Trigger)** and call it *Taken* and select it for the arrow in the **Inspector**.
 
-![Alt text](media/image45.png){ width=4.93403in height=1.50694in }
+![](media/image45.png){ width=4.93403in height=1.50694in }
 
 6.  In the **Animation** window select *Collected* and drag the images from the *Collected* file into the **Animation** window and trim the speed so it looks good.
 
@@ -30,7 +30,7 @@ Then we need to add some special states so we can control that you only get poin
 
 11. Now click in the blue area above [3] and remove the checkmark at [4].
 
-![Alt text](media/image46.png){ width=6.77222in height=1.39653in }
+![](media/image46.png){ width=6.77222in height=1.39653in }
 
 12. In the *PlayerController* script now change the OnTriggerEnter2D to the following:
 

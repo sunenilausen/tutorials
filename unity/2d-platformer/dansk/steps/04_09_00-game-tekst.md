@@ -1,6 +1,6 @@
 ## Game tekst
 
-![Alt text](media/image18.png){ width=0.9375in height=0.35417in }Man indsætter en tekst på
+![](media/image18.png){ width=0.9375in height=0.35417in }Man indsætter en tekst på
 skærmen i spillet ved at lave et objekt med **UI-\>Text**. (2021.3
 **UI-\>Legacy-\>Text**) Det vil automatisk lave to objekter: **Canvas**
 og **objektet**. Dette objekt skal så ’linkes’ til scriptet i score

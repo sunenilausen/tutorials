@@ -1,6 +1,6 @@
 ## Shooting
 
-![Alt text](media/image34.png){ width=0.43889in height=1.32153in }
+![](media/image34.png){ width=0.43889in height=1.32153in }
 This describes how to create something that can shoot. We start by creating the fireball itself. Under the **Assets/Graphics** folder, there are some images that can be used for it.
 
 1.  Drag the *Fireball1* image into the **Scene**.

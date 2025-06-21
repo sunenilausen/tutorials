@@ -55,7 +55,7 @@ void Update()
 }
 ```
 
-![Alt text](media/image64.png){ width=1.33333in height=0.86458in }Scriptet vender automatisk
+![](media/image64.png){ width=1.33333in height=0.86458in }Scriptet vender automatisk
 objektet så det peger i ”den rigtige retning”, på nær hvis det er
 **Ground** layer. På den måde kan scriptet bruges både til fjender som
 bevæger sig og platforme som skal bevæge sig.
@@ -69,10 +69,10 @@ typisk 2. Dernæst laves et tilsvarende antal Waypoints i
 **Hierarchy**’et og de kaldes *Waypoint1*, *Waypoint2*, … De skal så
 trækkes over i **Inspector**’en en for en.
 
-![Alt text](media/image65.png){ width=4.34444in height=1.41667in }
+![](media/image65.png){ width=4.34444in height=1.41667in }
 
 Hvis det er en platform, som skal bevæge sig er det vigtigt at man har
 sat **Layer** til *Ground*. Hvis det ikke findes, skal det bare
 oprettes.
 
-![Alt text](media/image66.png){ width=4.38611in height=0.78125in }
+![](media/image66.png){ width=4.38611in height=0.78125in }

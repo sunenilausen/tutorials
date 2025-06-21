@@ -11,11 +11,11 @@ bedst kan lide.
 2.  Tryk på det første billede (3) som kommer frem og træk det ind i
     **Scene**.
 
-![Alt text](media/image4.png){ width=2in height=2.04375in }
+![](media/image4.png){ width=2in height=2.04375in }
 
 Det skal nu gerne se sådan ud.
 
-![Alt text](media/image5.png){ width=1.54167in height=1.01944in }
+![](media/image5.png){ width=1.54167in height=1.01944in }
 
 Der kommer også et nyt objekt ind i **Hierarchy**’et som hedder noget
 med ”Idle …”.
@@ -25,9 +25,9 @@ med ”Idle …”.
 Man kan ændre størrelsen af figuren i **Inspector**’en ved at ændre
 **Scale** værdierne.
 
-![Alt text](media/image6.png){ width=4.58333in height=1.07847in }
+![](media/image6.png){ width=4.58333in height=1.07847in }
 
-![Alt text](media/image7.png){ width=1.65625in height=0.70069in }Tryk på **Play** i toppen af
+![](media/image7.png){ width=1.65625in height=0.70069in }Tryk på **Play** i toppen af
 skærmen og se hvordan det ser ud. Der sker ingen ting, *Player* bliver
 ’flyvende’ i luften.
 
@@ -47,10 +47,10 @@ platformen.
 
 6.  Tilpas **Collider**’en så den bedre passer til størrelsen af figuren
     ved at trykke på **Edit Collider**
-    ![Alt text](media/image8.png){ width=0.27083in height=0.21875in } og derefter tilpasse
+    ![](media/image8.png){ width=0.27083in height=0.21875in } og derefter tilpasse
     ’firkanten’ i **Scene**n.
 
 7.  Man skal under **Rigidbody 2D** sætte følgende (ellers kan figuren
     vælte):
 
-![Alt text](media/image9.png){ width=2.10417in height=0.62292in }
+![](media/image9.png){ width=2.10417in height=0.62292in }

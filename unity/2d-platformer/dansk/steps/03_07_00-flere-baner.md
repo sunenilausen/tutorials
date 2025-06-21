@@ -33,7 +33,7 @@ Vi har nu to ens levels.
 
 11. Gentag for *Level2* så man får følgende billede.
 
-![Alt text](media/image51.png){ width=4.93403in height=1.44583in }
+![](media/image51.png){ width=4.93403in height=1.44583in }
 
 12. Luk vinduet og åben *Level1* igen (dobbelt klik).
 

@@ -62,4 +62,4 @@ Click **Play** and see if it works.
 7.  You can change the speed in the **Inspector** by changing the
     **Speed** value.
 
-![Alt text](media/image10.png){ width=3.875in height=0.72431in }
+![](media/image10.png){ width=3.875in height=0.72431in }

@@ -10,7 +10,7 @@ kan se hvad der foregår.
 2.  Vælg *Main Camera* og træk *Player* objektet over i **Player** i
     **Inspector**’en.
 
-![Alt text](media/image30.png){ width=5.61458in height=0.56181in }
+![](media/image30.png){ width=5.61458in height=0.56181in }
 
 Nu skulle kameraet gerne følge *Player* og man kan derfor udvide sin
 bane i bredden og i højden.

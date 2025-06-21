@@ -4,13 +4,13 @@ You can get your game released on the web, so it can be played from a
 browser without installation. That way others can try your game.
 
 1.  Open Unity HUB and click on **Installs** and then on
-    ![Alt text](media/image67.png){ width=0.20069in height=0.20833in }.
+    ![](media/image67.png){ width=0.20069in height=0.20833in }.
 
 2.  Select *Add modules*
 
 3.  Select *WebGL Build Support*.
 
-![Alt text](media/image68.png){ width=4.86458in height=1.35069in }
+![](media/image68.png){ width=4.86458in height=1.35069in }
 
 4.  Click **Install** and wait for the installation to complete.
 
@@ -18,20 +18,20 @@ browser without installation. That way others can try your game.
 
 In Unity GUI: **Window->Package Manager**.
 
-![Alt text](media/image69.png){ width=2.38542in height=2.18264in }
+![](media/image69.png){ width=2.38542in height=2.18264in }
 
 Click on **Packages** and select **Unity Registry**.
 
-![Alt text](media/image70.png){ width=2.88542in height=2.06111in }
+![](media/image70.png){ width=2.88542in height=2.06111in }
 
 In the search field on the right, enter *webgl* and click **Install** in the bottom right corner.
 
-![Alt text](media/image71.png){ width=3.29861in height=2.09375in }
+![](media/image71.png){ width=3.29861in height=2.09375in }
 
 When the installation is complete, a new menu item has appeared at the
 top of the screen next to **Window** called **Publish**.
 
-![Alt text](media/image72.png){ width=2.74028in height=0.3125in }
+![](media/image72.png){ width=2.74028in height=0.3125in }
 
 1.  Click on **Publish->WebGL Project**.
 
