@@ -1,4 +1,6 @@
-
+### Prequisites
+* Install pandoc
+* Install pdflatex (basiclatex)
 
 
 ### Command to render from markdown
