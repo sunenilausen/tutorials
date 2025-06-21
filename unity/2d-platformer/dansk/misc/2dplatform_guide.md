@@ -2,8 +2,7 @@
 
 *Dokument og kode ligger her: <https://github.com/mhfalken/unity/>*
 
-<img src="../media/image1.png"
-style="width:5.32083in;height:2.98819in" />
+![](media/image1.png){ width=5.32083in height=2.98819in }
 
 Dette er en guide i hvordan man laver et lille 2D platform spil i Unity,
 som vist på billedet. Det inkluderer alt fra en start pakke og til en
@@ -232,8 +231,7 @@ Ved at vælge billederne i **Tile Palette** vinduet kan man tegne sin
 bane i **Scene** vinduet. Man kan også slette, kopier mv. ved at vælge i
 denne menu (øverst i **Tile Palette** vinduet).
 
-<img src="../media/image2.png"
-style="width:2.48958in;height:0.34375in" />
+![](media/image2.png){ width=2.48958in height=0.34375in }
 
 2.  Tegn lidt på banen. Ikke for meget på nuværende tidspunkt, da man
     har brug for en Player for a kunne finde de rette dimensioner for
@@ -249,8 +247,7 @@ sætte **Layer** tll *Ground*.
 4.  Tryk på *Terrain* i **Hierarchy**’et igen og vælg nu *Ground* i
     **Inspector**’en.
 
-<img src="../media/image3.png"
-style="width:1.9375in;height:0.58333in" />
+![](media/image3.png){ width=1.9375in height=0.58333in }
 
 ## Tilføj player
 
@@ -265,13 +262,11 @@ bedst kan lide.
 2.  Tryk på det første billede (3) som kommer frem og træk det ind i
     **Scene**.
 
-<img src="../media/image4.png"
-style="width:2in;height:2.04375in" />
+![](media/image4.png){ width=2in height=2.04375in }
 
 Det skal nu gerne se sådan ud.
 
-<img src="../media/image5.png"
-style="width:1.54167in;height:1.01944in" />
+![](media/image5.png){ width=1.54167in height=1.01944in }
 
 Der kommer også et nyt objekt ind i **Hierarchy**’et som hedder noget
 med ”Idle …”.
@@ -281,11 +276,9 @@ med ”Idle …”.
 Man kan ændre størrelsen af figuren i **Inspector**’en ved at ændre
 **Scale** værdierne.
 
-<img src="../media/image6.png"
-style="width:4.58333in;height:1.07847in" />
+![](media/image6.png){ width=4.58333in height=1.07847in }
 
-<img src="../media/image7.png"
-style="width:1.65625in;height:0.70069in" />Tryk på **Play** i toppen af
+![](media/image7.png){ width=1.65625in height=0.70069in }Tryk på **Play** i toppen af
 skærmen og se hvordan det ser ud. Der sker ingen ting, *Player* bliver
 ’flyvende’ i luften.
 
@@ -305,15 +298,13 @@ platformen.
 
 6.  Tilpas **Collider**’en så den bedre passer til størrelsen af figuren
     ved at trykke på **Edit Collider**
-    <img src="../media/image8.png"
-    style="width:0.27083in;height:0.21875in" /> og derefter tilpasse
+    ![](media/image8.png){ width=0.27083in height=0.21875in } og derefter tilpasse
     ’firkanten’ i **Scene**n.
 
 7.  Man skal under **Rigidbody 2D** sætte følgende (ellers kan figuren
     vælte):
 
-<img src="../media/image9.png"
-style="width:2.10417in;height:0.62292in" />
+![](media/image9.png){ width=2.10417in height=0.62292in }
 
 ## Flyt Player
 
@@ -379,8 +370,7 @@ Tryk på **Play** og se om det virker.
 7.  Man kan ændre hastigheden i **Inspector**’en ved at ændre på
     **Speed** værdien.
 
-<img src="../media/image10.png"
-style="width:3.875in;height:0.72431in" />
+![](media/image10.png){ width=3.875in height=0.72431in }
 
 ### Flip Player
 
@@ -509,8 +499,7 @@ hopper.
 Tryk **Play** og se at det hele virker.
 
 ## Frugter
-<img src="../media/image11.png"
-style="width:1.09514in;height:0.70694in" />
+![](media/image11.png){ width=1.09514in height=0.70694in }
 
 Nu skal vi have nogle ting vi kan ’tage’. Der er en række frugter, som
 kan bruges til dette. Frugterne skal også animeres.
@@ -525,8 +514,7 @@ kan bruges til dette. Frugterne skal også animeres.
     det for nogle få af dem, resten må I selv klare. Hvis man ’glemmer’
     det så bliver billederne bare meget små!
 
-<img src="../media/image12.png"
-style="width:2.79236in;height:0.40625in" />
+![](media/image12.png){ width=2.79236in height=0.40625in }
 
 3.  Tryk på *Cherries* og træk den ind i **Scenen**. I dialog boksen som
     kommer frem, gem filen i *Animator* folderen og kald den *Cherries*.
@@ -536,13 +524,11 @@ style="width:2.79236in;height:0.40625in" />
 Prøv at køre det og se hvordan bærret bevæger sig.
 
 5.  Tilføj en **Box Collider 2D** til *Cherries* og ret størrelsen så
-    den passer <img src="../media/image8.png"
-    style="width:0.27083in;height:0.21875in" />.
+    den passer ![](media/image8.png){ width=0.27083in height=0.21875in }.
 
 6.  Sæt derefter **Is Trigger**.
 
-<img src="../media/image13.png"
-style="width:2.79236in;height:0.35417in" />
+![](media/image13.png){ width=2.79236in height=0.35417in }
 
 En *trigger* kollision betyder at man ikke får en reel kollision, men
 kun en trigger på at de to figurer overlapper.
@@ -551,8 +537,7 @@ kun en trigger på at de to figurer overlapper.
     for *Cherries* (**Add Tag**, tryk på ’**+**’ og skriv *Fruit.* Vælg
     derefter *Fruit* for *Cherries*.).
 
-<img src="../media/image14.png"
-style="width:3.34375in;height:0.55208in" />
+![](media/image14.png){ width=3.34375in height=0.55208in }
 
 8.  Tilføj følgende linjer i bunder af *PlayerController* scriptet (før
     den sidste ’}’).
@@ -570,8 +555,7 @@ private void OnTriggerEnter2D(Collider2D collision)
 Test og se hvad der sker når *Player* rammer frugten.
 
 ### PreFabs
- <img src="../media/image15.png"
-style="width:1.075in;height:0.99514in" />
+ ![](media/image15.png){ width=1.075in height=0.99514in }
 
 Når man har lavet sin frugt færdig, skal man lave en *PreFab*. En
 *PreFab* er en skabelon som man kan bruge igen og igen.
@@ -595,14 +579,12 @@ Når man får mange frugter, så bliver ens **Hierarchy** lidt rodet.
     positionen til noget andet end 0! Ret det i **Inspector**’en ved at
     sætte det til 0 – se billede.
 
-<img src="../media/image16.png"
-style="width:6.23611in;height:0.81458in" />
+![](media/image16.png){ width=6.23611in height=0.81458in }
 
 4.  Træk alle frugterne ind under dette nye objekt for at få lidt mere
     orden.
 
-<img src="../media/image17.png"
-style="width:1.25in;height:1.28125in" />
+![](media/image17.png){ width=1.25in height=1.28125in }
 
 ## Game tekst og point
 
@@ -611,8 +593,7 @@ det. Disse point skal selvfølgelig vises på skærmen.
 
 Man starter med at indsætte en tekst i **Scene**n på følgende måde:
 
-1.  <img src="../media/image18.png"
-    style="width:0.9375in;height:0.35417in" />Lav et objekt i
+1.  ![](media/image18.png){ width=0.9375in height=0.35417in }Lav et objekt i
     **Hierarchy**’et og vælg **UI-\>Text** og kald det *Score*. (Hvis
     man kører på Unity version 2021.3 ligger det i
     **UI-\>Legacy-\>Text**.) Det vil automatisk lave to objekter:
@@ -620,16 +601,14 @@ Man starter med at indsætte en tekst i **Scene**n på følgende måde:
 
 2.  Start med at vælge *Canvas* og sæt følgende i **Inspector**’en:
 
-<img src="../media/image19.png"
-style="width:6.77222in;height:0.50208in" />
+![](media/image19.png){ width=6.77222in height=0.50208in }
 
 Efter man har oprettet *Score*, skal det konfigureres i **Inspector**’en
 (se billedet nedenunder).
 
 3.  Ret **Text** til *Score: 0*.
 
-4.  Ud for **Font**, tryk på <img src="../media/image20.png"
-    style="width:0.17708in;height:0.20833in" /> og vælg
+4.  Ud for **Font**, tryk på ![](media/image20.png){ width=0.17708in height=0.20833in } og vælg
     *PressStart2P-Regular*.
 
 5.  Sæt **Font Style** til *Bold*
@@ -638,8 +617,7 @@ Efter man har oprettet *Score*, skal det konfigureres i **Inspector**’en
 
 7.  Vælg en god farve i **Color**.
 
-<img src="../media/image21.png"
-style="width:5.8125in;height:1.36667in" />
+![](media/image21.png){ width=5.8125in height=1.36667in }
 
 Kik nu i **Game** vinduet og se at teksten står helt nede i venstre
 hjørne. Det er lidt mærkeligt (men sådan er det bare).
@@ -653,8 +631,7 @@ firkant frem – det skal stå i toppen af denne firkant! (Hele jeres spil
 er i den røde cirkel nede i venstre hjørne – så langt skal man zoome
 ud!)
 
-<img src="../media/image22.png"
-style="width:5.47153in;height:3.08125in" />
+![](media/image22.png){ width=5.47153in height=3.08125in }
 
 9.  Placer nu teksten et godt sted og sæt størrelsen op så den er
     lettere at se.
@@ -666,8 +643,7 @@ Det rettes ved at vælge teksten og så rette boksens størrelse i
 senere skal skrive. (Træk i de blå punkter for at ændre boks
 størrelsen).
 
-<img src="../media/image23.png"
-style="width:2.08333in;height:0.51042in" />
+![](media/image23.png){ width=2.08333in height=0.51042in }
 
 10. I *PlayerController* scriptet tilføj nu følgende linjer ’de rigtige
     steder i koden’.
@@ -802,11 +778,9 @@ mellem to punkter.
 6.  *Waypointsne* trækkes over i **Inspector**’en for *Saw* en for en.
     Det skal nu gerne se sådan ud:
 
-<img src="../media/image24.png"
-style="width:5.16944in;height:0.61458in" />
+![](media/image24.png){ width=5.16944in height=0.61458in }
 
-<img src="../media/image25.png"
-style="width:1.29167in;height:0.8125in" />
+![](media/image25.png){ width=1.29167in height=0.8125in }
 
 7.  Sæt **Speed** til **5** i **Inspector**’en for Saw. Det er den
     hastighed som den skal bevæge sig med og skal trimmes senere når det
@@ -818,8 +792,7 @@ rigtige steder.
 8.  Vælg *Waypoint1* og i **Inspector**’en tryk på den lille terning i
     øverste venstre hjørne og vælg en af farverne i nederst linje.
 
-<img src="../media/image26.png"
-style="width:2.41528in;height:1.56042in" />
+![](media/image26.png){ width=2.41528in height=1.56042in }
 
 Waypointet bliver nu synligt i **Scene** vinduet.
 
@@ -828,8 +801,7 @@ Waypointet bliver nu synligt i **Scene** vinduet.
 10. Gør det samme for *Waypoint2*, men placer det som det andet
     endepunkt.
 
-<img src="../media/image27.png"
-style="width:2.87569in;height:0.8125in" />
+![](media/image27.png){ width=2.87569in height=0.8125in }
 
 Nu skulle det hele gerne virke. Husk at man kan ændre på hastigheden med
 **Speed**. Læg mærke til at *Waypoint*’ens ikke er synlige i **Game**
@@ -883,8 +855,7 @@ audioPlayer.PlayOneShot(jumpSound, 1);
 3.  Den første linje laver et felt i **Inspector**’en som man skal
     trække den lyd over i man ønsker at bruge til hop.
 
-<img src="../media/image28.png"
-style="width:6.56597in;height:0.26597in" />
+![](media/image28.png){ width=6.56597in height=0.26597in }
 
 Den sidste linje afspiller selve lydfilen, og skal stå der hvor man
 hopper.
@@ -905,8 +876,7 @@ Den første linjer bruges til at vælge hvilken lydfil man ønsker og den
 anden linje afspiller lydfilen. Det er vigtigt at man husker at trække
 en lydfil over i **Inspector**’en for hver lyd.
 
-<img src="../media/image29.png"
-style="width:6.56597in;height:0.57778in" />
+![](media/image29.png){ width=6.56597in height=0.57778in }
 
 I tilfældet hvor vi dør, har vi brug for at vente lidt med at destruerer
 vores *Player*, da lyden ellers også forsvinder.
@@ -931,8 +901,7 @@ kan se hvad der foregår.
 2.  Vælg *Main Camera* og træk *Player* objektet over i **Player** i
     **Inspector**’en.
 
-<img src="../media/image30.png"
-style="width:5.61458in;height:0.56181in" />
+![](media/image30.png){ width=5.61458in height=0.56181in }
 
 Nu skulle kameraet gerne følge *Player* og man kan derfor udvide sin
 bane i bredden og i højden.
@@ -948,8 +917,7 @@ Der ligger nogle baggrundsbilleder i **Background** folderen.
 
 3.  Ret **Scale** så det fylder det hele.
 
-<img src="../media/image31.png"
-style="width:5.85417in;height:0.71944in" />
+![](media/image31.png){ width=5.85417in height=0.71944in }
 
 # 2D Platformspil - Avanceret funktioner
 
@@ -1009,16 +977,14 @@ udfyldes:
 | Mode Set | Hvis set, så tændes objektet, ellers slukkes det. |
 | Click Sound | Lyden når man rører switchen |
 
-<img src="../media/image32.png"
-style="width:4.71944in;height:0.89583in" />
+![](media/image32.png){ width=4.71944in height=0.89583in }
 
 Dette vil tænde for *MovingPlatform* når man rører Switchen. Det kræver
 at *MovingPlatform* er slukket inden man startet spillet. Dette gøres
 ved at fjerne fluebenet i dette felt i **Inspector**’en for
 *MovingPlatform*:
 
-<img src="../media/image33.png"
-style="width:1.79167in;height:0.93681in" />
+![](media/image33.png){ width=1.79167in height=0.93681in }
 
 8.  Husk at lave en PreFab.
 
@@ -1028,8 +994,7 @@ ikke.
 
 ## Skud
 
-<img src="../media/image34.png"
-style="width:0.43889in;height:1.32153in" />
+![](media/image34.png){ width=0.43889in height=1.32153in }
 Her beskrives hvordan man
 laver en ting som kan skyde. Vi starter med at lave selve ildkuglen og
 under **Assets/Graphics** folderen ligger der nogle billeder som kan
@@ -1136,8 +1101,7 @@ luften.
 
 5.  Sæt **Is Trigger**.
 
-<img src="../media/image35.png"
-style="width:0.85069in;height:1.41667in" />
+![](media/image35.png){ width=0.85069in height=1.41667in }
 
 6.  Tilføj følgende kode til *PlayerController* scriptet (nede i bunden
     af filen før den sidste ’}’).
@@ -1180,8 +1144,7 @@ transform.Translate(dir * speed * Time.deltaTime, 0, 0);
 
 ## Player animationer
 
-<img src="../media/image36.png"
-style="width:0.70833in;height:0.9375in" />Nu skal vi have animeret vores
+![](media/image36.png){ width=0.70833in height=0.9375in }Nu skal vi have animeret vores
 *Player*. Under den grafik folder hvor I har fundet jeres Player (**Main
 Characters/**), findes nogle forskellige ”animationer”, dvs. serie af
 billeder som vist i den rigtige hastighed laver en animation. Vi skal
@@ -1204,24 +1167,20 @@ starte med at lave en animation når *Player* står stille (idle).
     vil bruge og trykke på den lille pil så man kan se alle billederne,
     vælge alle sammen og trække dem over i animatoren med musen).
 
-<img src="../media/image37.png"
-style="width:4.95278in;height:1.46875in" />
+![](media/image37.png){ width=4.95278in height=1.46875in }
 
 Det skal se ud som på billedet neden for.
 
 6.  Man kan nu se hvordan det ser ud ved at trykke på play
-    <img src="../media/image38.png"
-    style="width:0.19028in;height:0.16667in" /> knappen, og justere
+    ![](media/image38.png){ width=0.19028in height=0.16667in } knappen, og justere
     hastigheden ved at flytte den blå streg til siderne (se rød pil
     nedenfor).
-    <img src="../media/image39.png"
-    style="width:5.88542in;height:1.81319in" />
+    ![](media/image39.png){ width=5.88542in height=1.81319in }
 
 7.  Da animation skal forsætte, skal man huske at sætte *Loop Time* i
     **Inspector**’en for *Player_idle*.
 
-<img src="../media/image40.png"
-style="width:3.69792in;height:1.63472in" />
+![](media/image40.png){ width=3.69792in height=1.63472in }
 
 Når man er færdig med animationsvinduet, kan man med fordel dock’et det
 til et af de andre vinduer man har fx **Console** vinduet, så det er
@@ -1238,21 +1197,18 @@ en løbe animation (run).
     oven for. Husk at man skal vælge den rigtige animation i
     **Animation** vinduet, inden man kopierer billederne over.
 
-<img src="../media/image41.png"
-style="width:2.75486in;height:1.05833in" />
+![](media/image41.png){ width=2.75486in height=1.05833in }
 
 Da man nu har flere animationer, er man nød til at fortælle Unity
 hvilken animation man skal bruge hvornår.
 
 2.  Åben Player **Animator**’en – dobbelt klip på:
 
-<img src="../media/image42.png"
-style="width:0.52431in;height:0.70764in" />
+![](media/image42.png){ width=0.52431in height=0.70764in }
 
 Der kommer et billede frem som ser lidt ud som dette:
 
-<img src="../media/image43.png"
-style="width:5.68889in;height:2.51458in" />
+![](media/image43.png){ width=5.68889in height=2.51458in }
 
 Det er et diagram, som viser de forskellige animationstilstande og
 hvordan man kan komme fra den ene til den anden.
@@ -1269,8 +1225,7 @@ hvordan man kan komme fra den ene til den anden.
 6.  Klik nu på den pil som går fra *Player_idle*-\>*Player_run* og se på
     **Inspector**’en ude til højre.
 
-<img src="../media/image44.png"
-style="width:5.61319in;height:2.62708in" />
+![](media/image44.png){ width=5.61319in height=2.62708in }
 
 7.  Tryk på ’+’ \[1\], hvilket automatisk laver \[2\]. Fjern markeringen
     i **Has Exit Time** \[3\].
@@ -1330,8 +1285,7 @@ hedder *Collected* og som skal bruges når man tager en frugt.
 5.  Opret en **Parameter (Trigger)** og kald den *Taken* og vælg den for
     pilen i **Inspector**’en.
 
-<img src="../media/image45.png"
-style="width:4.93403in;height:1.50694in" />
+![](media/image45.png){ width=4.93403in height=1.50694in }
 
 6.  I **Animation**s vinduet vælg *Collected* og træk billederne fra
     *Collected* filen over i **Animation**s vinduet og trim hastigheden
@@ -1354,8 +1308,7 @@ animationen.
 
 11. Klik nu i det blå område over \[3\] og fjern markeringen i \[4\].
 
-<img src="../media/image46.png"
-style="width:6.77222in;height:1.39653in" />
+![](media/image46.png){ width=6.77222in height=1.39653in }
 
 12. I *PlayerController* scriptet ændrer nu i OnTriggerEnter2D til
     følgende:
@@ -1408,23 +1361,19 @@ hvis man har lavet Player animationer først).
 7.  Lav en **Make Transition** af *Trampoline* staten til sig selv – se
     blå pil på billedet nede i højre hjørne:
 
-<img src="../media/image47.png"
-style="width:5.77083in;height:1.81528in" />
+![](media/image47.png){ width=5.77083in height=1.81528in }
 
 8.  Vælg den nye *Transition* (pilen) og tilføj en **Conditions** og sæt
     den til *Jump*.
 
 9.  Fjern også fluebenet ud for **Has Exit Time**.
 
-<img src="../media/image48.png"
-style="width:4.71875in;height:0.53403in" />
+![](media/image48.png){ width=4.71875in height=0.53403in }
 
 10. Vælg *Trampoline* i *Animator* folderen og fjern fluebenet i **Loop
     Time** (**Inspector**’en):
 
-<img src="../media/image49.png"
-style="width:0.80208in;height:0.90625in" /><img src="../media/image50.png"
-style="width:4.89583in;height:0.54306in" />
+![](media/image49.png){ width=0.80208in height=0.90625in }![](media/image50.png){ width=4.89583in height=0.54306in }
 
 11. Tilføj følgende linjer til *PlayerController* scriptet (i bunden af
     OnTriggerEnter2D(Collider2D collision))
@@ -1484,8 +1433,7 @@ Vi har nu to ens levels.
 
 11. Gentag for *Level2* så man får følgende billede.
 
-<img src="../media/image51.png"
-style="width:4.93403in;height:1.44583in" />
+![](media/image51.png){ width=4.93403in height=1.44583in }
 
 12. Luk vinduet og åben *Level1* igen (dobbelt klik).
 
@@ -1619,8 +1567,7 @@ tekster for at gøre det mere overskueligt i **Inspector**’en.
 
 holder musen over feltet
 
-<img src="../media/image52.png"
-style="width:5.92708in;height:2.61597in" />
+![](media/image52.png){ width=5.92708in height=2.61597in }
 
 Her er **Texts** og **Sounds** eksempler på Header felter.
 
@@ -1636,8 +1583,7 @@ på følgende måde:
 xxComp = GetComponent<Rigidbody2D>();
 ```
 
-<img src="../media/image53.png"
-style="width:1.67708in;height:0.33333in" />De enkelte komponentnavne kan
+![](media/image53.png){ width=1.67708in height=0.33333in }De enkelte komponentnavne kan
 findes i **Inspector**’en, hvor man bare skal fjerne eventuelle
 mellemrum fra navnet. Fx Rigidbody 2D -\> Rigidbody2D
 
@@ -1774,8 +1720,7 @@ overlapper, som hvis en person skal tage en ting. Hvis den ene af de to
 objekter har ’triggeren’ sat, så bliver det en ’trigger’ kollision.
 ’Triggeren’ sættes i **Inspector**’en under **Collider**’en.
 
-<img src="../media/image54.png"
-style="width:2.17708in;height:0.26042in" />
+![](media/image54.png){ width=2.17708in height=0.26042in }
 
 I scriptet kan man så lave en aktion på kollisionen, på følgende måde:
 
@@ -1838,8 +1783,7 @@ under *Assets*, skal den laves først.
 7.  Hvis animation skal forsætte, skal man huske at sætte *Loop Time* i
     **Inspector**’en.
 
-<img src="../media/image39.png"
-style="width:5.88542in;height:1.81319in" />
+![](media/image39.png){ width=5.88542in height=1.81319in }
 
 Når man er færdig med animationsvinduet, kan man med fordel dock’et det
 til et af de andre vinduer man har, så det er lettere at finde næste
@@ -1893,16 +1837,14 @@ Man skal så trække den lydfil over i **Jump Sound** feltet i
 
 ### Musik
 
-<img src="../media/image55.png"
-style="width:3.42708in;height:0.49167in" />Hvis man ønsker
+![](media/image55.png){ width=3.42708in height=0.49167in }Hvis man ønsker
 baggrundsmusik, skal man for **Main Camera** objektet tilføje en
 **AudioSource** komponent og så trække en lydfil over i **AudioClip**
 feltet og sætte **Loop** flaget.
 
 ## Game tekst
 
-<img src="../media/image18.png"
-style="width:0.9375in;height:0.35417in" />Man indsætter en tekst på
+![](media/image18.png){ width=0.9375in height=0.35417in }Man indsætter en tekst på
 skærmen i spillet ved at lave et objekt med **UI-\>Text**. (2021.3
 **UI-\>Legacy-\>Text**) Det vil automatisk lave to objekter: **Canvas**
 og **objektet**. Dette objekt skal så ’linkes’ til scriptet i score
@@ -1934,11 +1876,9 @@ der er nederst i dette dokument.
 Opret en folder under **Assets** og kald den **Fonts**. De fonte som man
 ønsker at bruge skal så trækkes over i denne folder. Når det er gjort,
 kan fonten bruges i tekst objektet ved at trykke på
-<img src="../media/image56.png"
-style="width:0.19792in;height:0.20833in" /> ud for **Font**.
+![](media/image56.png){ width=0.19792in height=0.20833in } ud for **Font**.
 
-<img src="../media/image57.png"
-style="width:5.40625in;height:1.56667in" />
+![](media/image57.png){ width=5.40625in height=1.56667in }
 
 ### Stationær tekst
 
@@ -1948,15 +1888,13 @@ kan man gøre følgende.
 1.  Lav et firkantet objekt (**2D Object-\>Sprites-\>Square**) og kald
     det fx *Skilt*.
 
-2.  <img src="../media/image58.png"
-    style="width:1.0625in;height:0.59375in" />Ret **Scale** så firkanten
+2.  ![](media/image58.png){ width=1.0625in height=0.59375in }Ret **Scale** så firkanten
     får den rigtige størrelse.
 
 3.  Vælg *Skilt* og indsæt en tekst (**UI-\>Text** el.
     **UI-\>Legacy-\>Text**).
 
-4.  <img src="../media/image59.png"
-    style="width:4in;height:0.58333in" />I **Hierarchy**’et under
+4.  ![](media/image59.png){ width=4in height=0.58333in }I **Hierarchy**’et under
     *Skilt* vælg *Canvas* og i **Inspector**’en under **Canvas** sæt
     **Render Mode** til **World Space**.
 
@@ -1965,20 +1903,17 @@ kan man gøre følgende.
     Stadig i **Inspector**’en under **Rect Tranform** sæt **Pos X**,
     **Pos Y** og **Pos Z** til 0.
 
-<img src="../media/image60.png"
-style="width:5.20833in;height:0.67153in" />
+![](media/image60.png){ width=5.20833in height=0.67153in }
 
 I **Hierarchy**’et vælg *Text* og sæt **Scale** til 0.02 for både X og Y
 og ret **Text** til det den skal være.
 
-<img src="../media/image61.png"
-style="width:5.06319in;height:0.33333in" />
+![](media/image61.png){ width=5.06319in height=0.33333in }
 
 Prøv spillet og det skulle gerne se sådan ud nu (min tekst er ”\<- Den
 vej”):
 
-<img src="../media/image62.png"
-style="width:2.92708in;height:1.61042in" />
+![](media/image62.png){ width=2.92708in height=1.61042in }
 
 Farven på skiltet rettes under *Skilt* objektet, mens teksten formateret
 under *Text* objektet.
@@ -2113,8 +2048,7 @@ Man kan sætte en debug tekst ind på følgende måde, som kan ses i
 
 Debug.Log("Text " + value);
 
-<img src="../media/image63.png"
-style="width:1.23958in;height:0.97222in" />
+![](media/image63.png){ width=1.23958in height=0.97222in }
 
 Man kan også i GUI’en **Inspector** trykke på de tre prikker i højre
 hjørne og vælge Debug. På den måde kan man i **Inspector** under
@@ -2239,8 +2173,7 @@ void Update()
 }
 ```
 
-<img src="../media/image64.png"
-style="width:1.33333in;height:0.86458in" />Scriptet vender automatisk
+![](media/image64.png){ width=1.33333in height=0.86458in }Scriptet vender automatisk
 objektet så det peger i ”den rigtige retning”, på nær hvis det er
 **Ground** layer. På den måde kan scriptet bruges både til fjender som
 bevæger sig og platforme som skal bevæge sig.
@@ -2254,15 +2187,13 @@ typisk 2. Dernæst laves et tilsvarende antal Waypoints i
 **Hierarchy**’et og de kaldes *Waypoint1*, *Waypoint2*, … De skal så
 trækkes over i **Inspector**’en en for en.
 
-<img src="../media/image65.png"
-style="width:4.34444in;height:1.41667in" />
+![](media/image65.png){ width=4.34444in height=1.41667in }
 
 Hvis det er en platform, som skal bevæge sig er det vigtigt at man har
 sat **Layer** til *Ground*. Hvis det ikke findes, skal det bare
 oprettes.
 
-<img src="../media/image66.png"
-style="width:4.38611in;height:0.78125in" />
+![](media/image66.png){ width=4.38611in height=0.78125in }
 
 ## Stå fast på platforme som bevæger sig
 
@@ -2337,15 +2268,13 @@ Man kan få sit spil releaset på nettet, så det kan spilles fra en
 browser uden installation. På den måde kan andre prøve ens spil.
 
 1.  Åben Unity HUB’en og tryk på **Installs** og derefter på
-    <img src="../media/image67.png"
-    style="width:0.20069in;height:0.20833in" />.
+    ![](media/image67.png){ width=0.20069in height=0.20833in }.
 
 2.  Vælg *Add modules*
 
 3.  Vælg *WebGL Build Support*.
 
-<img src="../media/image68.png"
-style="width:4.86458in;height:1.35069in" />
+![](media/image68.png){ width=4.86458in height=1.35069in }
 
 4.  Tryk **Install** og vent på det er installeret. (
 
@@ -2353,25 +2282,21 @@ style="width:4.86458in;height:1.35069in" />
 
 I Unity GUI: **Window-\>Package Manager**.
 
-<img src="../media/image69.png"
-style="width:2.38542in;height:2.18264in" />
+![](media/image69.png){ width=2.38542in height=2.18264in }
 
 Tryk på **Packages** og vælg **Unity Registry**.
 
-<img src="../media/image70.png"
-style="width:2.88542in;height:2.06111in" />
+![](media/image70.png){ width=2.88542in height=2.06111in }
 
 I søge feltet til højre indtast *webgl* og tryk **Install** nede i højre
 hjørne.
 
-<img src="../media/image71.png"
-style="width:3.29861in;height:2.09375in" />
+![](media/image71.png){ width=3.29861in height=2.09375in }
 
 Når installationen er færdig er der kommet et nyt menupunkt frem i
 toppen af skærmen ved siden af **Window** som hedder **Publish**.
 
-<img src="../media/image72.png"
-style="width:2.74028in;height:0.3125in" />
+![](media/image72.png){ width=2.74028in height=0.3125in }
 
 1.  Tryk på **Publish-\>WebGL Project**.
 
@@ -2397,8 +2322,7 @@ at man selv kæmper lidt med det for at få det til at virke**!
 En Android enhed har ikke nogen knapper, så første skridt er at få lavet
 nogle knapper på skærmen, så man har noget at trykke på.
 
-<img src="../media/image73.png"
-style="width:3.72917in;height:2.10069in" />
+![](media/image73.png){ width=3.72917in height=2.10069in }
 
 Der ligger en Unity package som indeholder disse knapper samt den logik
 der skal til at aflæse dem her:
@@ -2418,8 +2342,7 @@ For *Canvas* skal man rettet følgende i **Inspector**’en:
 
 3.  **Plane Distance**: 0
 
-<img src="../media/image74.png"
-style="width:5.05278in;height:1.16667in" />
+![](media/image74.png){ width=5.05278in height=1.16667in }
 
 Nu vil de nuværende tekster (Score mv) med stor sandsynlighed blive
 ’usynlige’. Det skal rettes ved at rode med **Pos Z** værdierne for
@@ -2431,14 +2354,12 @@ virke! Test at alt virker som før.
 Inden man fortsætter er det vigtigt at nedenstående option er sat, som
 beskrevet tidligere (hvis ikke så er der lidt ekstra arbejde her…).
 
-<img src="../media/image75.png"
-style="width:4.375in;height:0.49167in" />
+![](media/image75.png){ width=4.375in height=0.49167in }
 
 Under *PreFabs* find *Knapper* og træk det op over *Canvas* i
 **Hierarchy**’et, så det ser sådan ud:
 
-<img src="../media/image76.png"
-style="width:1.27083in;height:0.70833in" />
+![](media/image76.png){ width=1.27083in height=0.70833in }
 
 Nu skulle der gerne komme nogle knapper frem. Hvis de ikke er synlige i
 **Game** view, så skal **Pos Z** fikses. Det skal nu gerne ligne det
@@ -2519,12 +2440,10 @@ køres og at det ellers virker normalt.
 Nu skal vi have spillet over på Android enheden.
 
 1.  Åben Unity HUB’en og installer Android support
-    (Install-\><img src="../media/image77.png"
-    style="width:0.16181in;height:0.15625in" />-\>Add modules). Unity
+    (Install-\>![](media/image77.png){ width=0.16181in height=0.15625in }-\>Add modules). Unity
     GUI skal genstartes bagefter for at det virker.
 
-<img src="../media/image78.png"
-style="width:2.25in;height:0.94028in" />
+![](media/image78.png){ width=2.25in height=0.94028in }
 
 2.  Sæt Android enheden i *Developer mode* (søg på nettet – det er lidt
     overraskende hvad man skal gøre og kan afhænge af model). Det
@@ -2550,8 +2469,7 @@ spilles ’offline’. Navn mv kan sættes i **Player Settings** under
 Hvis teksterne (Score mv) ikke lige sidder det rigtige sted på skærmen,
 så kan man fikse det ved at bruge *anchors* for de enkelte tekster.
 
-<img src="../media/image79.png"
-style="width:1.73958in;height:1.02083in" />
+![](media/image79.png){ width=1.73958in height=1.02083in }
 
 # Links
 
