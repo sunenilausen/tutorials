@@ -2,8 +2,7 @@
 
 *Document and code available here: <https://github.com/mhfalken/unity/>*
 
-<img src="../media/image1.png"
-style="width:5.32083in;height:2.98819in" />
+![Alt text](media/image1.png){ width=5.32083in height=2.98819in }
 
 This is a guide on how to create a small 2D platform game in Unity,
 as shown in the image. It includes everything from a starter package to a

@@ -7,8 +7,7 @@ that you fight with it a bit yourself to get it working**!
 An Android device has no buttons, so the first step is to create
 some buttons on the screen, so you have something to press.
 
-<img src="../media/image73.png"
-style="width:3.72917in;height:2.10069in" />
+![Alt text](media/image73.png){ width=3.72917in height=2.10069in }
 
 There is a Unity package that contains these buttons and the logic
 needed to read them here:
@@ -28,8 +27,7 @@ For *Canvas* you need to correct the following in the **Inspector**:
 
 3.  **Plane Distance**: 0
 
-<img src="../media/image74.png"
-style="width:5.05278in;height:1.16667in" />
+![Alt text](media/image74.png){ width=5.05278in height=1.16667in }
 
 Now the current texts (Score etc.) will most likely become
 'invisible'. This must be fixed by messing with the **Pos Z** values for
@@ -41,14 +39,12 @@ work! Test that everything works as before.
 Before continuing, it's important that the following option is set, as
 described earlier (if not, there's a bit of extra work here...).
 
-<img src="../media/image75.png"
-style="width:4.375in;height:0.49167in" />
+![Alt text](media/image75.png){ width=4.375in height=0.49167in }
 
 Under *PreFabs* find *Knapper* and drag it up over *Canvas* in
 the **Hierarchy**, so it looks like this:
 
-<img src="../media/image76.png"
-style="width:1.27083in;height:0.70833in" />
+![Alt text](media/image76.png){ width=1.27083in height=0.70833in }
 
 Now some buttons should appear. If they are not visible in
 **Game** view, then **Pos Z** needs to be fixed. It should now look like the

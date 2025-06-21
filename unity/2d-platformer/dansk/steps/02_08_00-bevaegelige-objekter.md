@@ -27,11 +27,9 @@ mellem to punkter.
 6.  *Waypointsne* trækkes over i **Inspector**’en for *Saw* en for en.
     Det skal nu gerne se sådan ud:
 
-<img src="../media/image24.png"
-style="width:5.16944in;height:0.61458in" />
+![Alt text](media/image24.png){ width=5.16944in height=0.61458in }
 
-<img src="../media/image25.png"
-style="width:1.29167in;height:0.8125in" />
+![Alt text](media/image25.png){ width=1.29167in height=0.8125in }
 
 7.  Sæt **Speed** til **5** i **Inspector**’en for Saw. Det er den
     hastighed som den skal bevæge sig med og skal trimmes senere når det
@@ -43,8 +41,7 @@ rigtige steder.
 8.  Vælg *Waypoint1* og i **Inspector**’en tryk på den lille terning i
     øverste venstre hjørne og vælg en af farverne i nederst linje.
 
-<img src="../media/image26.png"
-style="width:2.41528in;height:1.56042in" />
+![Alt text](media/image26.png){ width=2.41528in height=1.56042in }
 
 Waypointet bliver nu synligt i **Scene** vinduet.
 
@@ -53,8 +50,7 @@ Waypointet bliver nu synligt i **Scene** vinduet.
 10. Gør det samme for *Waypoint2*, men placer det som det andet
     endepunkt.
 
-<img src="../media/image27.png"
-style="width:2.87569in;height:0.8125in" />
+![Alt text](media/image27.png){ width=2.87569in height=0.8125in }
 
 Nu skulle det hele gerne virke. Husk at man kan ændre på hastigheden med
 **Speed**. Læg mærke til at *Waypoint*’ens ikke er synlige i **Game**

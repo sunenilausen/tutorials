@@ -43,13 +43,11 @@ Fill in:
 | Mode Set | If set, the object is turned on, otherwise it's turned off. |
 | Click Sound | The sound when touching the switch |
 
-<img src="../media/image32.png"
-style="width:4.71944in;height:0.89583in" />
+![Alt text](media/image32.png){ width=4.71944in height=0.89583in }
 
 This will turn on *MovingPlatform* when touching the Switch. This requires that *MovingPlatform* is turned off before starting the game. This is done by removing the checkmark in this field in the **Inspector** for *MovingPlatform*:
 
-<img src="../media/image33.png"
-style="width:1.79167in;height:0.93681in" />
+![Alt text](media/image33.png){ width=1.79167in height=0.93681in }
 
 8.  Remember to create a PreFab.
 

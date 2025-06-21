@@ -3,12 +3,10 @@
 Nu skal vi have spillet over på Android enheden.
 
 1.  Åben Unity HUB’en og installer Android support
-    (Install-\><img src="../media/image77.png"
-    style="width:0.16181in;height:0.15625in" />-\>Add modules). Unity
+    (Install-\>![Alt text](media/image77.png){ width=0.16181in height=0.15625in }-\>Add modules). Unity
     GUI skal genstartes bagefter for at det virker.
 
-<img src="../media/image78.png"
-style="width:2.25in;height:0.94028in" />
+![Alt text](media/image78.png){ width=2.25in height=0.94028in }
 
 2.  Sæt Android enheden i *Developer mode* (søg på nettet – det er lidt
     overraskende hvad man skal gøre og kan afhænge af model). Det
@@ -34,5 +32,4 @@ spilles ’offline’. Navn mv kan sættes i **Player Settings** under
 Hvis teksterne (Score mv) ikke lige sidder det rigtige sted på skærmen,
 så kan man fikse det ved at bruge *anchors* for de enkelte tekster.
 
-<img src="../media/image79.png"
-style="width:1.73958in;height:1.02083in" />
+![Alt text](media/image79.png){ width=1.73958in height=1.02083in }

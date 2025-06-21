@@ -7,8 +7,7 @@ Man kan sætte en debug tekst ind på følgende måde, som kan ses i
 
 Debug.Log("Text " + value);
 
-<img src="../media/image63.png"
-style="width:1.23958in;height:0.97222in" />
+![Alt text](media/image63.png){ width=1.23958in height=0.97222in }
 
 Man kan også i GUI’en **Inspector** trykke på de tre prikker i højre
 hjørne og vælge Debug. På den måde kan man i **Inspector** under

@@ -7,8 +7,7 @@ at man selv kæmper lidt med det for at få det til at virke**!
 En Android enhed har ikke nogen knapper, så første skridt er at få lavet
 nogle knapper på skærmen, så man har noget at trykke på.
 
-<img src="../media/image73.png"
-style="width:3.72917in;height:2.10069in" />
+![Alt text](media/image73.png){ width=3.72917in height=2.10069in }
 
 Der ligger en Unity package som indeholder disse knapper samt den logik
 der skal til at aflæse dem her:
@@ -28,8 +27,7 @@ For *Canvas* skal man rettet følgende i **Inspector**’en:
 
 3.  **Plane Distance**: 0
 
-<img src="../media/image74.png"
-style="width:5.05278in;height:1.16667in" />
+![Alt text](media/image74.png){ width=5.05278in height=1.16667in }
 
 Nu vil de nuværende tekster (Score mv) med stor sandsynlighed blive
 ’usynlige’. Det skal rettes ved at rode med **Pos Z** værdierne for
@@ -41,14 +39,12 @@ virke! Test at alt virker som før.
 Inden man fortsætter er det vigtigt at nedenstående option er sat, som
 beskrevet tidligere (hvis ikke så er der lidt ekstra arbejde her…).
 
-<img src="../media/image75.png"
-style="width:4.375in;height:0.49167in" />
+![Alt text](media/image75.png){ width=4.375in height=0.49167in }
 
 Under *PreFabs* find *Knapper* og træk det op over *Canvas* i
 **Hierarchy**’et, så det ser sådan ud:
 
-<img src="../media/image76.png"
-style="width:1.27083in;height:0.70833in" />
+![Alt text](media/image76.png){ width=1.27083in height=0.70833in }
 
 Nu skulle der gerne komme nogle knapper frem. Hvis de ikke er synlige i
 **Game** view, så skal **Pos Z** fikses. Det skal nu gerne ligne det

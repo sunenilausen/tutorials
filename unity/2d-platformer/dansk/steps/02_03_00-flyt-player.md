@@ -62,5 +62,4 @@ Tryk på **Play** og se om det virker.
 7.  Man kan ændre hastigheden i **Inspector**’en ved at ændre på
     **Speed** værdien.
 
-<img src="../media/image10.png"
-style="width:3.875in;height:0.72431in" />
+![Alt text](media/image10.png){ width=3.875in height=0.72431in }

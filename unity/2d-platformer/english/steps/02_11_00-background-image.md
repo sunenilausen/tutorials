@@ -9,5 +9,4 @@ There are some background images in the **Background** folder.
 
 3.  Adjust **Scale** so it fills everything.
 
-<img src="../media/image31.png"
-style="width:5.85417in;height:0.71944in" />
+![Alt text](media/image31.png){ width=5.85417in height=0.71944in }

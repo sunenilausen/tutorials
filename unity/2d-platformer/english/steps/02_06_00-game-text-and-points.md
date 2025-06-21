@@ -5,8 +5,7 @@ it. These points should of course be displayed on the screen.
 
 You start by inserting text into the **Scene** in the following way:
 
-1.  <img src="../media/image18.png"
-    style="width:0.9375in;height:0.35417in" />Create an object in the
+1.  ![Alt text](media/image18.png){ width=0.9375in height=0.35417in }Create an object in the
     **Hierarchy** and select **UI->Text** and call it *Score*. (If
     you are running Unity version 2021.3 it is located in
     **UI->Legacy->Text**.) This will automatically create two objects:
@@ -14,16 +13,14 @@ You start by inserting text into the **Scene** in the following way:
 
 2.  Start by selecting *Canvas* and set the following in the **Inspector**:
 
-<img src="../media/image19.png"
-style="width:6.77222in;height:0.50208in" />
+![Alt text](media/image19.png){ width=6.77222in height=0.50208in }
 
 After you have created *Score*, it should be configured in the **Inspector**
 (see the image below).
 
 3.  Change **Text** to *Score: 0*.
 
-4.  Next to **Font**, click on <img src="../media/image20.png"
-    style="width:0.17708in;height:0.20833in" /> and select
+4.  Next to **Font**, click on ![Alt text](media/image20.png){ width=0.17708in height=0.20833in } and select
     *PressStart2P-Regular*.
 
 5.  Set **Font Style** to *Bold*
@@ -32,8 +29,7 @@ After you have created *Score*, it should be configured in the **Inspector**
 
 7.  Choose a good color in **Color**.
 
-<img src="../media/image21.png"
-style="width:5.8125in;height:1.36667in" />
+![Alt text](media/image21.png){ width=5.8125in height=1.36667in }
 
 Look now in the **Game** window and see that the text is located all the way down in the left
 corner. This is a bit strange (but that's just how it is).
@@ -46,8 +42,7 @@ When you zoom out in the **Scene** window you can see that a white
 rectangle appears – it should be at the top of this rectangle! (Your entire game
 is in the red circle down in the left corner – you have to zoom out that far!)
 
-<img src="../media/image22.png"
-style="width:5.47153in;height:3.08125in" />
+![Alt text](media/image22.png){ width=5.47153in height=3.08125in }
 
 9.  Now place the text in a good location and increase the size so it is
     easier to see.
@@ -59,8 +54,7 @@ the **Scene**. Remember to also make the box long enough for the text we
 will write later. (Drag the blue dots to change the box
 size).
 
-<img src="../media/image23.png"
-style="width:2.08333in;height:0.51042in" />
+![Alt text](media/image23.png){ width=2.08333in height=0.51042in }
 
 10. In the *PlayerController* script now add the following lines 'in the right
     places in the code'.

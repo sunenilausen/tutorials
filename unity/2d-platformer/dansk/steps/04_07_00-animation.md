@@ -30,8 +30,7 @@ under *Assets*, skal den laves først.
 7.  Hvis animation skal forsætte, skal man huske at sætte *Loop Time* i
     **Inspector**’en.
 
-<img src="../media/image39.png"
-style="width:5.88542in;height:1.81319in" />
+![Alt text](media/image39.png){ width=5.88542in height=1.81319in }
 
 Når man er færdig med animationsvinduet, kan man med fordel dock’et det
 til et af de andre vinduer man har, så det er lettere at finde næste

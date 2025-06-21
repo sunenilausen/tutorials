@@ -9,8 +9,7 @@ overlap, like when a person should pick up an item. If one of the two
 objects has the 'trigger' set, it becomes a 'trigger' collision.
 The 'trigger' is set in the **Inspector** under the **Collider**.
 
-<img src="../media/image54.png"
-style="width:2.17708in;height:0.26042in" />
+![Alt text](media/image54.png){ width=2.17708in height=0.26042in }
 
 In the script, you can then create an action on the collision in the following way:
 

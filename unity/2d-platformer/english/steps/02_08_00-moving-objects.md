@@ -27,11 +27,9 @@ between two points.
 6.  The *Waypoints* are dragged over to the **Inspector** for *Saw* one by one.
     It should now look like this:
 
-<img src="../media/image24.png"
-style="width:5.16944in;height:0.61458in" />
+![Alt text](media/image24.png){ width=5.16944in height=0.61458in }
 
-<img src="../media/image25.png"
-style="width:1.29167in;height:0.8125in" />
+![Alt text](media/image25.png){ width=1.29167in height=0.8125in }
 
 7.  Set **Speed** to **5** in the **Inspector** for Saw. This is the
     speed at which it should move and should be trimmed later when
@@ -43,8 +41,7 @@ right places.
 8.  Select *Waypoint1* and in the **Inspector** click on the small cube in
     the top left corner and select one of the colors in the bottom row.
 
-<img src="../media/image26.png"
-style="width:2.41528in;height:1.56042in" />
+![Alt text](media/image26.png){ width=2.41528in height=1.56042in }
 
 The waypoint now becomes visible in the **Scene** window.
 
@@ -53,8 +50,7 @@ The waypoint now becomes visible in the **Scene** window.
 10. Do the same for *Waypoint2*, but place it as the other
     endpoint.
 
-<img src="../media/image27.png"
-style="width:2.87569in;height:0.8125in" />
+![Alt text](media/image27.png){ width=2.87569in height=0.8125in }
 
 Now everything should work. Remember that you can change the speed with
 **Speed**. Note that the *Waypoints* are not visible in the **Game**

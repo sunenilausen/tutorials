@@ -55,8 +55,7 @@ void Update()
 }
 ```
 
-<img src="../media/image64.png"
-style="width:1.33333in;height:0.86458in" />The script automatically turns
+![Alt text](media/image64.png){ width=1.33333in height=0.86458in }The script automatically turns
 the object so it points in "the right direction", except if it is
 on the **Ground** layer. This way the script can be used for both enemies that
 move and platforms that should move.
@@ -70,12 +69,10 @@ typically 2. Next, you create a corresponding number of Waypoints in
 the **Hierarchy** and call them *Waypoint1*, *Waypoint2*, … They should then
 be dragged into the **Inspector** one by one.
 
-<img src="../media/image65.png"
-style="width:4.34444in;height:1.41667in" />
+![Alt text](media/image65.png){ width=4.34444in height=1.41667in }
 
 If it is a platform that should move, it is important that you have
 set the **Layer** to *Ground*. If it doesn't exist, it should just
 be created.
 
-<img src="../media/image66.png"
-style="width:4.38611in;height:0.78125in" />
+![Alt text](media/image66.png){ width=4.38611in height=0.78125in }

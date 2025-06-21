@@ -11,13 +11,11 @@ like best.
 2.  Click on the first image (3) that appears and drag it into the
     **Scene**.
 
-<img src="../media/image4.png"
-style="width:2in;height:2.04375in" />
+![Alt text](media/image4.png){ width=2in height=2.04375in }
 
 It should now look like this.
 
-<img src="../media/image5.png"
-style="width:1.54167in;height:1.01944in" />
+![Alt text](media/image5.png){ width=1.54167in height=1.01944in }
 
 A new object also appears in the **Hierarchy** called something
 like "Idle ...".
@@ -27,11 +25,9 @@ like "Idle ...".
 You can change the size of the character in the **Inspector** by changing
 the **Scale** values.
 
-<img src="../media/image6.png"
-style="width:4.58333in;height:1.07847in" />
+![Alt text](media/image6.png){ width=4.58333in height=1.07847in }
 
-<img src="../media/image7.png"
-style="width:1.65625in;height:0.70069in" />Click **Play** at the top of
+![Alt text](media/image7.png){ width=1.65625in height=0.70069in }Click **Play** at the top of
 the screen and see how it looks. Nothing happens, *Player* becomes
 'floating' in the air.
 
@@ -51,12 +47,10 @@ the platform.
 
 6.  Adjust the **Collider** so it better fits the size of the character
     by clicking **Edit Collider**
-    <img src="../media/image8.png"
-    style="width:0.27083in;height:0.21875in" /> and then adjusting
+    ![Alt text](media/image8.png){ width=0.27083in height=0.21875in } and then adjusting
     the 'rectangle' in the **Scene**.
 
 7.  Under **Rigidbody 2D** you must set the following (otherwise the character
     can tip over):
 
-<img src="../media/image9.png"
-style="width:2.10417in;height:0.62292in" />
+![Alt text](media/image9.png){ width=2.10417in height=0.62292in }

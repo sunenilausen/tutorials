@@ -4,20 +4,17 @@ Our *Player* needs more than one animation, as he also needs a run animation.
 
 1.  For each additional animation you need, repeat the steps above. Remember to select the correct animation in the **Animation** window before copying the images over.
 
-<img src="../media/image41.png"
-style="width:2.75486in;height:1.05833in" />
+![Alt text](media/image41.png){ width=2.75486in height=1.05833in }
 
 Since you now have multiple animations, you need to tell Unity which animation to use when.
 
 2.  Open the Player **Animator** – double click on:
 
-<img src="../media/image42.png"
-style="width:0.52431in;height:0.70764in" />
+![Alt text](media/image42.png){ width=0.52431in height=0.70764in }
 
 An image appears that looks a bit like this:
 
-<img src="../media/image43.png"
-style="width:5.68889in;height:2.51458in" />
+![Alt text](media/image43.png){ width=5.68889in height=2.51458in }
 
 This is a diagram showing the different animation states and how you can go from one to another.
 
@@ -29,8 +26,7 @@ This is a diagram showing the different animation states and how you can go from
 
 6.  Now click on the arrow that goes from *Player_idle*->*Player_run* and look at the **Inspector** on the right.
 
-<img src="../media/image44.png"
-style="width:5.61319in;height:2.62708in" />
+![Alt text](media/image44.png){ width=5.61319in height=2.62708in }
 
 7.  Press '+' [1], which automatically creates [2]. Remove the checkmark in **Has Exit Time** [3].
 

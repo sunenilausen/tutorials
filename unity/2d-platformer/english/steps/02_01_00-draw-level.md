@@ -10,8 +10,7 @@ By selecting the images in the **Tile Palette** window you can draw your
 level in the **Scene** window. You can also delete, copy etc. by selecting in
 this menu (at the top of the **Tile Palette** window).
 
-<img src="../media/image2.png"
-style="width:2.48958in;height:0.34375in" />
+![Alt text](media/image2.png){ width=2.48958in height=0.34375in }
 
 2.  Draw a bit on the level. Not too much at this point, as you
     need a Player to find the right dimensions for
@@ -26,5 +25,4 @@ When you're done drawing, you need to set the **Layer** to *Ground* in the *Terr
 4.  Click on *Terrain* in the **Hierarchy** again and now select *Ground* in
     the **Inspector**.
 
-<img src="../media/image3.png"
-style="width:1.9375in;height:0.58333in" />
+![Alt text](media/image3.png){ width=1.9375in height=0.58333in }

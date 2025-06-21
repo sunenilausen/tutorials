@@ -50,16 +50,14 @@ udfyldes:
 | Mode Set | Hvis set, så tændes objektet, ellers slukkes det. |
 | Click Sound | Lyden når man rører switchen |
 
-<img src="../media/image32.png"
-style="width:4.71944in;height:0.89583in" />
+![Alt text](media/image32.png){ width=4.71944in height=0.89583in }
 
 Dette vil tænde for *MovingPlatform* når man rører Switchen. Det kræver
 at *MovingPlatform* er slukket inden man startet spillet. Dette gøres
 ved at fjerne fluebenet i dette felt i **Inspector**’en for
 *MovingPlatform*:
 
-<img src="../media/image33.png"
-style="width:1.79167in;height:0.93681in" />
+![Alt text](media/image33.png){ width=1.79167in height=0.93681in }
 
 8.  Husk at lave en PreFab.
 

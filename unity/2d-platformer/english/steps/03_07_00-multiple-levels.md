@@ -28,8 +28,7 @@ We now have two identical levels.
 
 11. Repeat for *Level2* so you get the following image.
 
-<img src="../media/image51.png"
-style="width:4.93403in;height:1.44583in" />
+![Alt text](media/image51.png){ width=4.93403in height=1.44583in }
 
 12. Close the window and open *Level1* again (double click).
 

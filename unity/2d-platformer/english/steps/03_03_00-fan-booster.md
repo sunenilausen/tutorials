@@ -12,8 +12,7 @@ This describes how to create a fan (blower) that can blow you up into the air.
 
 5.  Set **Is Trigger**.
 
-<img src="../media/image35.png"
-style="width:0.85069in;height:1.41667in" />
+![Alt text](media/image35.png){ width=0.85069in height=1.41667in }
 
 6.  Add the following code to the *PlayerController* script (at the bottom of the file before the last '}').
 

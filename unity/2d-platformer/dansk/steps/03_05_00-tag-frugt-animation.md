@@ -19,8 +19,7 @@ hedder *Collected* og som skal bruges når man tager en frugt.
 5.  Opret en **Parameter (Trigger)** og kald den *Taken* og vælg den for
     pilen i **Inspector**’en.
 
-<img src="../media/image45.png"
-style="width:4.93403in;height:1.50694in" />
+![Alt text](media/image45.png){ width=4.93403in height=1.50694in }
 
 6.  I **Animation**s vinduet vælg *Collected* og træk billederne fra
     *Collected* filen over i **Animation**s vinduet og trim hastigheden
@@ -43,8 +42,7 @@ animationen.
 
 11. Klik nu i det blå område over \[3\] og fjern markeringen i \[4\].
 
-<img src="../media/image46.png"
-style="width:6.77222in;height:1.39653in" />
+![Alt text](media/image46.png){ width=6.77222in height=1.39653in }
 
 12. I *PlayerController* scriptet ændrer nu i OnTriggerEnter2D til
     følgende:

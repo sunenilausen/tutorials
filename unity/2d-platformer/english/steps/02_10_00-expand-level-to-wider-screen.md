@@ -10,8 +10,7 @@ see what's happening.
 2.  Select *Main Camera* and drag the *Player* object into **Player** in
     the **Inspector**.
 
-<img src="../media/image30.png"
-style="width:5.61458in;height:0.56181in" />
+![Alt text](media/image30.png){ width=5.61458in height=0.56181in }
 
 Now the camera should follow the *Player* and you can therefore expand your
 level in width and height.

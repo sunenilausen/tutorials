@@ -1,6 +1,5 @@
 ## Frugter
-<img src="../media/image11.png"
-style="width:1.09514in;height:0.70694in" />
+![Alt text](media/image11.png){ width=1.09514in height=0.70694in }
 
 Nu skal vi have nogle ting vi kan ’tage’. Der er en række frugter, som
 kan bruges til dette. Frugterne skal også animeres.
@@ -15,8 +14,7 @@ kan bruges til dette. Frugterne skal også animeres.
     det for nogle få af dem, resten må I selv klare. Hvis man ’glemmer’
     det så bliver billederne bare meget små!
 
-<img src="../media/image12.png"
-style="width:2.79236in;height:0.40625in" />
+![Alt text](media/image12.png){ width=2.79236in height=0.40625in }
 
 3.  Tryk på *Cherries* og træk den ind i **Scenen**. I dialog boksen som
     kommer frem, gem filen i *Animator* folderen og kald den *Cherries*.
@@ -26,13 +24,11 @@ style="width:2.79236in;height:0.40625in" />
 Prøv at køre det og se hvordan bærret bevæger sig.
 
 5.  Tilføj en **Box Collider 2D** til *Cherries* og ret størrelsen så
-    den passer <img src="../media/image8.png"
-    style="width:0.27083in;height:0.21875in" />.
+    den passer ![Alt text](media/image8.png){ width=0.27083in height=0.21875in }.
 
 6.  Sæt derefter **Is Trigger**.
 
-<img src="../media/image13.png"
-style="width:2.79236in;height:0.35417in" />
+![Alt text](media/image13.png){ width=2.79236in height=0.35417in }
 
 En *trigger* kollision betyder at man ikke får en reel kollision, men
 kun en trigger på at de to figurer overlapper.
@@ -41,8 +37,7 @@ kun en trigger på at de to figurer overlapper.
     for *Cherries* (**Add Tag**, tryk på ’**+**’ og skriv *Fruit.* Vælg
     derefter *Fruit* for *Cherries*.).
 
-<img src="../media/image14.png"
-style="width:3.34375in;height:0.55208in" />
+![Alt text](media/image14.png){ width=3.34375in height=0.55208in }
 
 8.  Tilføj følgende linjer i bunder af *PlayerController* scriptet (før
     den sidste ’}’).

@@ -23,23 +23,19 @@ hvis man har lavet Player animationer først).
 7.  Lav en **Make Transition** af *Trampoline* staten til sig selv – se
     blå pil på billedet nede i højre hjørne:
 
-<img src="../media/image47.png"
-style="width:5.77083in;height:1.81528in" />
+![Alt text](media/image47.png){ width=5.77083in height=1.81528in }
 
 8.  Vælg den nye *Transition* (pilen) og tilføj en **Conditions** og sæt
     den til *Jump*.
 
 9.  Fjern også fluebenet ud for **Has Exit Time**.
 
-<img src="../media/image48.png"
-style="width:4.71875in;height:0.53403in" />
+![Alt text](media/image48.png){ width=4.71875in height=0.53403in }
 
 10. Vælg *Trampoline* i *Animator* folderen og fjern fluebenet i **Loop
     Time** (**Inspector**’en):
 
-<img src="../media/image49.png"
-style="width:0.80208in;height:0.90625in" /><img src="../media/image50.png"
-style="width:4.89583in;height:0.54306in" />
+![Alt text](media/image49.png){ width=0.80208in height=0.90625in }![Alt text](media/image50.png){ width=4.89583in height=0.54306in }
 
 11. Tilføj følgende linjer til *PlayerController* scriptet (i bunden af
     OnTriggerEnter2D(Collider2D collision))

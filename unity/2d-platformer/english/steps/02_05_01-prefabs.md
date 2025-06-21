@@ -1,6 +1,5 @@
 ### PreFabs
- <img src="../media/image15.png"
-style="width:1.075in;height:0.99514in" />
+ ![Alt text](media/image15.png){ width=1.075in height=0.99514in }
 
 When you have finished making your fruit, you should create a *PreFab*. A
 *PreFab* is a template that you can use again and again.
@@ -24,11 +23,9 @@ When you get many fruits, your **Hierarchy** becomes a bit messy.
     position to something other than 0! Fix this in the **Inspector** by
     setting it to 0 – see image.
 
-<img src="../media/image16.png"
-style="width:6.23611in;height:0.81458in" />
+![Alt text](media/image16.png){ width=6.23611in height=0.81458in }
 
 4.  Drag all the fruits under this new object to get a bit more
     order.
 
-<img src="../media/image17.png"
-style="width:1.25in;height:1.28125in" />
+![Alt text](media/image17.png){ width=1.25in height=1.28125in }
