@@ -4,6 +4,7 @@
 - Tutorials organized by technology (`javascript/`, `unity/`, `arcade-makecode/`)
 - Each technology has language subdirectories (`english/`, `dansk/`)
 - Files are numbered sequentially (01-, 02-, etc.)
+- Files are not allowed to have danish letters, but should use ae, oe, aa instead of æ, ø, å
 - Supporting media stored in `images/` or `media/` folders
 
 ## Content Guidelines
